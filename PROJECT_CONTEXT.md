@@ -27,6 +27,15 @@ Este arquivo registra o andamento das tarefas, decisões técnicas e pendências
   - **Injeção Dinâmica via JS:** Decidimos injetar o ícone do carrinho e a gaveta lateral dinamicamente em todas as páginas por JavaScript para garantir escalabilidade caso novas páginas sejam adicionadas no futuro, evitando redundância de código nos arquivos HTML.
   - **Servidor Interno Python:** Iniciamos um servidor interno em Python na porta 8080 para rodar a aplicação localmente e permitir testes eficientes com persistência de dados.
 
+### [2026-07-14] Remoção dos Preços Públicos da Vitrine
+- **Objetivo:** Remover os preços visuais das vitrines públicas dos produtos e acessórios a pedido do usuário (mantendo o foco de vendas corporativas/sob orçamento).
+- **Arquivos Alterados:**
+  - [produtos.html](file:///c:/Users/linco/OneDrive/Área de Trabalho/SITE PORTO MAQUINAS/SITE PORTO MAQUINAS/produtos.html) - Removida a exibição visual de preços dos 12 cards.
+  - [linha-acessorio-panificacao.html](file:///c:/Users/linco/OneDrive/Área de Trabalho/SITE PORTO MAQUINAS/SITE PORTO MAQUINAS/linha-acessorio-panificacao.html) - Removida a exibição visual de preços nos 27 cards de acessórios.
+- **Decisões Técnicas:**
+  - Mantivemos os atributos `data-price` no HTML de cada card de produto para permitir que a lógica do carrinho/orçamento calcule o subtotal e o total acumulado por baixo dos panos.
+
+
 
 ## Próximos Passos (Pendências)
 1. **Adicionar Colaborador:** O usuário deve adicionar o amigo como colaborador no repositório do GitHub (instruído na mensagem anterior).
