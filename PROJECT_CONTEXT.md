@@ -35,6 +35,15 @@ Este arquivo registra o andamento das tarefas, decisões técnicas e pendências
 - **Decisões Técnicas:**
   - Mantivemos os atributos `data-price` no HTML de cada card de produto para permitir que a lógica do carrinho/orçamento calcule o subtotal e o total acumulado por baixo dos panos.
 
+### [2026-07-14] Correção de Bug e Ajuste de Layout do Carrinho
+- **Objetivo:** Corrigir a falha de cliques não-responsivos nos botões e melhorar o posicionamento do botão de carrinho no cabeçalho.
+- **Arquivos Alterados:**
+  - [js/main.js](file:///c:/Users/linco/OneDrive/Área de Trabalho/SITE PORTO MAQUINAS/SITE PORTO MAQUINAS/js/main.js) - Refatorado event handler de cliques para usar `.closest()`, adicionado tratamento com `try...catch` ao localStorage e alterado local de injeção do botão do carrinho.
+- **Decisões Técnicas:**
+  - **Uso do .closest():** Substituímos o event selector direto `.classList.contains` por `.closest('.add-to-cart-btn')` para garantir que o clique nas bordas dos botões ou no emoji `🛒` disparem a adição corretamente.
+  - **Reposicionamento no Header:** Injetamos o botão no `.header-main` (ao lado da barra de pesquisa) para evitar que ele fique escondido no menu `<nav>` que possui scroll horizontal em dispositivos móveis, melhorando consideravelmente a usabilidade (UX).
+
+
 
 
 ## Próximos Passos (Pendências)

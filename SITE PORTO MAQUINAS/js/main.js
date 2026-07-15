@@ -139,13 +139,19 @@ document.addEventListener("DOMContentLoaded", () => {
        ========================================== */
 
     // 1. Estado do Carrinho (carregado do localStorage)
-    let cart = JSON.parse(localStorage.getItem('porto_maquinas_cart')) || [];
+    let cart = [];
+    try {
+        cart = JSON.parse(localStorage.getItem('porto_maquinas_cart')) || [];
+        if (!Array.isArray(cart)) cart = [];
+    } catch (err) {
+        cart = [];
+    }
 
     // 2. Injeção Dinâmica dos Elementos do Carrinho
     function injectCartElements() {
-        // Injetar o botão do carrinho na Topbar (dentro de <nav>)
-        const nav = document.querySelector('nav[aria-label="Navegação principal"]');
-        if (nav && !document.getElementById('cart-toggle-btn')) {
+        // Injetar o botão do carrinho no Header (ao lado do formulário de busca)
+        const headerMain = document.querySelector('.header-main');
+        if (headerMain && !document.getElementById('cart-toggle-btn')) {
             const cartToggleHTML = `
                 <div class="cart-toggle-container">
                     <button id="cart-toggle-btn" class="cart-toggle-btn" aria-label="Ver carrinho">
@@ -155,7 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </button>
                 </div>
             `;
-            nav.insertAdjacentHTML('beforeend', cartToggleHTML);
+            headerMain.insertAdjacentHTML('beforeend', cartToggleHTML);
         }
 
         // Injetar a Gaveta (Drawer) do Carrinho no final do body
@@ -400,8 +406,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Botões "Adicionar ao Carrinho"
     document.addEventListener('click', (e) => {
-        if (e.target && e.target.classList.contains('add-to-cart-btn')) {
-            const card = e.target.closest('.product-card') || e.target.closest('.catalog-choice');
+        const btn = e.target.closest('.add-to-cart-btn');
+        if (btn) {
+            const card = btn.closest('.product-card') || btn.closest('.catalog-choice');
             if (card) {
                 const id = card.getAttribute('data-id');
                 const name = card.getAttribute('data-name');
@@ -423,11 +430,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const id = itemElement.getAttribute('data-id');
 
-            if (e.target.classList.contains('inc-qty-btn')) {
+            if (e.target.closest('.inc-qty-btn')) {
                 changeQty(id, 1);
-            } else if (e.target.classList.contains('dec-qty-btn')) {
+            } else if (e.target.closest('.dec-qty-btn')) {
                 changeQty(id, -1);
-            } else if (e.target.classList.contains('cart-item-remove')) {
+            } else if (e.target.closest('.cart-item-remove')) {
                 removeFromCart(id);
             }
         });
