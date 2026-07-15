@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+﻿document.addEventListener("DOMContentLoaded", () => {
     /* 1. Scroll Animations (Fade In / Slide Up) */
     const observerOptions = {
         root: null,
@@ -39,6 +39,46 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+        /* 2.5. Main Site Search (Máquinas) */
+    const siteSearchInput = document.getElementById('site-search-input');
+    const machineCards = document.querySelectorAll('.product-card');
+    const categorySections = document.querySelectorAll('.category-section');
+    
+    if (siteSearchInput && machineCards.length > 0) {
+        siteSearchInput.addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase().trim();
+            
+            machineCards.forEach(card => {
+                const name = (card.getAttribute('data-name') || '').toLowerCase();
+                const category = (card.getAttribute('data-category') || '').toLowerCase();
+                const models = (card.getAttribute('data-models') || '').toLowerCase();
+                
+                if (name.includes(term) || category.includes(term) || models.includes(term)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Hide/Show category sections based on visible children
+            categorySections.forEach(section => {
+                const visibleCards = section.querySelectorAll('.product-card:not([style*="display: none"])');
+                if (visibleCards.length === 0 && term !== '') {
+                    section.style.display = 'none';
+                } else {
+                    section.style.display = '';
+                }
+            });
+        });
+        
+        // Prevent form submission on enter
+        const siteSearchForm = document.querySelector('.site-search');
+        if (siteSearchForm) {
+            siteSearchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+            });
+        }
+    }
     /* 3. WhatsApp Form (Orçamento) */
     const contactForm = document.querySelector('.contact-layout form');
     if (contactForm) {
@@ -640,3 +680,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+

@@ -1,0 +1,7 @@
+Use o arquivo JSON enviado como referência para cadastrar as máquinas na aba “Máquinas”.
+
+Antes de adicionar cada item, compare com as máquinas já existentes no site e não crie duplicidades.
+
+Adicione somente as máquinas que ainda não estiverem cadastradas, mantenha o sistema atual de orçamento e não coloque preços.
+
+O campo “pagina_pdf” indica a página do catálogo original onde está a imagem de cada máquina.

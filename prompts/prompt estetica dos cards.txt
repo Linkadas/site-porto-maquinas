@@ -1,0 +1,197 @@
+Quero reformular completamente a aba "Máquinas" (antiga aba Produtos), deixando-a com aparência de um e-commerce premium, semelhante ao layout da imagem de referência.
+
+O objetivo é transmitir profissionalismo, organização e facilitar a visualização das máquinas.
+
+## Cards das máquinas
+
+Cada máquina deve ficar dentro de um card moderno contendo:
+
+- Imagem grande da máquina centralizada.
+- Fundo branco.
+- Cantos arredondados (16px a 20px).
+- Sombra suave.
+- Borda discreta.
+- Espaçamento interno bem distribuído.
+- Animação suave ao passar o mouse (hover).
+
+No hover:
+
+- aumentar levemente o card;
+- aumentar a sombra;
+- destacar a borda.
+
+## Imagem
+
+A imagem deve ser o principal destaque.
+
+- Centralizada.
+- Mesmo tamanho para todos os produtos.
+- Fundo branco.
+- Não cortar a máquina.
+- Não deformar a imagem.
+- Utilizar object-fit: contain.
+
+## Nome
+
+Logo abaixo da imagem mostrar:
+
+Nome da máquina
+
+Utilizar:
+
+- fonte maior;
+- peso 700;
+- cor #1F2937;
+- limitar em duas linhas.
+
+## Descrição
+
+Abaixo do nome:
+
+Mostrar uma descrição curta.
+
+Máximo de 2 linhas.
+
+Caso exista descrição maior, mostrar botão:
+
+"Ver mais"
+
+abrindo um modal com todas as informações técnicas.
+
+## Botões
+
+Na parte inferior do card colocar apenas dois botões.
+
+### Botão principal
+
+Solicitar orçamento
+
+- vermelho da identidade visual;
+- largura maior;
+- ícone do WhatsApp;
+- hover moderno.
+
+### Botão secundário
+
+Ver detalhes
+
+- branco;
+- borda vermelha;
+- hover vermelho.
+
+## Informações
+
+Não mostrar:
+
+- preço;
+- pagamento;
+- compra.
+
+Mostrar somente:
+
+- nome;
+- categoria;
+- modelo;
+- descrição curta.
+
+## Organização
+
+Todos os cards devem possuir exatamente a mesma altura.
+
+As imagens devem possuir exatamente o mesmo espaço.
+
+Os botões devem ficar sempre alinhados na parte inferior.
+
+Mesmo que uma descrição seja menor que outra.
+
+## Grid
+
+Desktop:
+
+4 cards por linha.
+
+Notebook:
+
+3 cards por linha.
+
+Tablet:
+
+2 cards por linha.
+
+Celular:
+
+1 card por linha.
+
+## Filtros
+
+Na parte superior da página adicionar filtros modernos.
+
+Categorias:
+
+- Todas
+- Amassadeiras
+- Formadoras
+- Linhas de Produção
+- Pizza
+- Pastéis
+- Dosadoras
+- Envasadoras
+- Equipamentos para Queijo
+- Batedeiras
+- Acessórios
+
+Os filtros devem funcionar sem recarregar a página.
+
+## Pesquisa
+
+A pesquisa deve filtrar em tempo real por:
+
+- nome;
+- modelo;
+- categoria.
+
+## Paginação
+
+Caso existam muitas máquinas:
+
+Adicionar paginação moderna ou botão:
+
+"Carregar mais"
+
+## Responsividade
+
+No celular:
+
+- cards ocupando praticamente toda a largura;
+- imagem maior;
+- botões um abaixo do outro;
+- excelente espaçamento para toque.
+
+## Animações
+
+Adicionar animações suaves em:
+
+- Cards;
+- Botões;
+- Filtros;
+- Pesquisa.
+
+Nada exagerado.
+
+## Importante
+
+Não altere nenhuma funcionalidade existente.
+
+Não altere o sistema de orçamento.
+
+Não altere o WhatsApp.
+
+Não altere o carrinho.
+
+Não altere a pesquisa.
+
+Não altere os produtos cadastrados.
+
+Faça apenas melhorias visuais.
+
+O resultado deve parecer um catálogo profissional, semelhante ao de grandes empresas industriais, transmitindo qualidade, organização e confiança, utilizando o mesmo padrão visual da imagem enviada como referência.

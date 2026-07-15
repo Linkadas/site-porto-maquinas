@@ -1,0 +1,690 @@
+{
+  "catalogo": {
+    "titulo": "Catálogo Promoções - Máquinas",
+    "arquivo_origem": "Promocao.pdf",
+    "total_paginas": 28,
+    "observacao": "Use este arquivo como base para cadastrar somente as máquinas que ainda não existem no site. Não criar duplicidades, não inventar preços e manter o sistema de orçamento existente."
+  },
+  "instrucoes_importacao": {
+    "renomear_aba": {
+      "de": "Produtos",
+      "para": "Máquinas"
+    },
+    "nao_duplicar": true,
+    "comparar_modelos_sem_hifen_espaco_ou_caixa": true,
+    "nao_adicionar_precos": true,
+    "botao_principal": "Adicionar ao orçamento",
+    "manter_whatsapp_existente": true,
+    "usar_imagem_da_pagina_do_pdf": true
+  },
+  "maquinas": [
+    {
+      "pagina_pdf": 2,
+      "nome": "Amassadeira Série APQ-F2",
+      "categoria": "Amassadeiras",
+      "modelos": [
+        {
+          "modelo": "APQ-80-F2",
+          "capacidade_massa_kg": 80
+        },
+        {
+          "modelo": "APQ-125-F2",
+          "capacidade_massa_kg": 125
+        }
+      ],
+      "descricao": "Amassadeira com cuba fixa para massa pronta de pão de queijo.",
+      "caracteristicas": [
+        "Cuba fixa",
+        "Capacidade para 80 e 125 kg de massa pronta de pão de queijo",
+        "Batedor especial e pivô central em aço inox 304",
+        "Batedor com 2 velocidades",
+        "Programador de tempo de batida nas duas velocidades",
+        "Cuba com sentido de rotação reversível",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12"
+      ]
+    },
+    {
+      "pagina_pdf": 3,
+      "nome": "Amassadeira Série APQ",
+      "categoria": "Amassadeiras",
+      "modelos": [
+        {
+          "modelo": "APQ-180",
+          "capacidade_massa_kg": 180
+        },
+        {
+          "modelo": "APQ-300",
+          "capacidade_massa_kg": 300
+        }
+      ],
+      "descricao": "Amassadeira industrial com cuba removível e controle por CLP.",
+      "caracteristicas": [
+        "Cuba removível",
+        "Capacidade para 180 a 300 kg de massa pronta",
+        "Painel elétrico CLP",
+        "Programação de rotações do batedor e da cuba",
+        "Programação de tempos de batida e velocidades",
+        "Memória para armazenar receitas",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12"
+      ]
+    },
+    {
+      "pagina_pdf": 4,
+      "nome": "Elevador-Virador de Cuba",
+      "categoria": "Acessórios e Movimentação",
+      "modelos": [],
+      "descricao": "Equipamento para elevação, virada e alimentação automática de massa.",
+      "caracteristicas": [
+        "Composto por elevador e plataforma com moega",
+        "Alimentação automática da massa na formadora",
+        "Possui raspador de massa",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12"
+      ]
+    },
+    {
+      "pagina_pdf": 5,
+      "nome": "FB-600-GF",
+      "categoria": "Formadoras de Pão de Queijo",
+      "modelos": [
+        {
+          "modelo": "FB-600-GF"
+        }
+      ],
+      "descricao": "Formadora de pão de queijo para Girofreezer.",
+      "caracteristicas": [
+        "Painel CLP",
+        "Troca rápida de gabarito",
+        "Regulagem de altura do cabeçote motorizada",
+        "Cabeçote de fácil desmontagem para limpeza",
+        "Não acompanha esteira",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12",
+        "Fabricada sob medida conforme o Girofreezer"
+      ]
+    },
+    {
+      "pagina_pdf": 6,
+      "nome": "FB-60-40",
+      "categoria": "Formadoras de Pão de Queijo",
+      "modelos": [
+        {
+          "modelo": "FB-60-40"
+        }
+      ],
+      "descricao": "Formadora de pão de queijo com bandejas de 60 x 40 cm.",
+      "caracteristicas": [
+        "Fornecida com 3 moldes",
+        "Bandejas plásticas de 60 x 40 cm",
+        "Avanço automático das bandejas",
+        "Regulagem através do painel CLP",
+        "Regulagem de altura do cabeçote motorizada",
+        "Não deposita massa sem bandeja",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12"
+      ]
+    },
+    {
+      "pagina_pdf": 7,
+      "nome": "FB-500-E",
+      "categoria": "Formadoras de Pão de Queijo",
+      "modelos": [
+        {
+          "modelo": "FB-500-E"
+        }
+      ],
+      "descricao": "Formadora de pão de queijo com esteira para transporte de bandejas.",
+      "caracteristicas": [
+        "Bandejas de 40 x 60 cm",
+        "Fornecida com 3 moldes",
+        "Alimentação das bandejas manual",
+        "Para produtos de 10 a 120 g",
+        "Esteira para transporte das bandejas",
+        "Também produz biscoitos amanteigados",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12"
+      ]
+    },
+    {
+      "pagina_pdf": 8,
+      "nome": "FB-500-L",
+      "categoria": "Formadoras de Pão de Queijo",
+      "modelos": [
+        {
+          "modelo": "FB-500-L"
+        }
+      ],
+      "descricao": "Formadora de pão de queijo com painel touch screen.",
+      "caracteristicas": [
+        "Bandejas de 40 x 60 cm",
+        "Magazine para bandejas plásticas",
+        "Avanço automático das bandejas",
+        "Painel touch screen",
+        "Fornecida com 3 moldes",
+        "Fácil regulagem, operação e limpeza",
+        "Regulagem de altura do cabeçote motorizada",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12",
+        "Opcional: magazine com duas bandejas de 20 x 60 cm ao mesmo tempo"
+      ]
+    },
+    {
+      "pagina_pdf": 9,
+      "nome": "FB-200-A",
+      "categoria": "Formadoras de Pão de Queijo",
+      "modelos": [
+        {
+          "modelo": "FB-200-A"
+        }
+      ],
+      "descricao": "Formadora de pão de queijo para bandejas de 20 x 60 cm.",
+      "caracteristicas": [
+        "Bandejas de 20 x 60 cm",
+        "Fornecida com 3 moldes",
+        "Alimentação das bandejas manual",
+        "Para produtos de 10 a 120 g",
+        "Fácil regulagem, operação e limpeza",
+        "Esteira para transporte das bandejas",
+        "Também produz biscoitos amanteigados",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12"
+      ]
+    },
+    {
+      "pagina_pdf": 10,
+      "nome": "FB-200-Baby",
+      "categoria": "Formadoras de Pão de Queijo",
+      "modelos": [
+        {
+          "modelo": "FB-200-Baby"
+        }
+      ],
+      "descricao": "Formadora compacta de bancada para pão de queijo.",
+      "caracteristicas": [
+        "Bandejas de 20 x 60 cm",
+        "Mesa com regulagem de altura",
+        "Alimentação das bandejas manual",
+        "Para produção de 10 a 120 g",
+        "Fácil regulagem, operação e limpeza",
+        "Também produz biscoitos amanteigados",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12",
+        "Compacta, produtiva e de baixo investimento"
+      ]
+    },
+    {
+      "pagina_pdf": 11,
+      "nome": "RDO-150",
+      "categoria": "Equipamentos para Queijo",
+      "modelos": [
+        {
+          "modelo": "RDO-150"
+        }
+      ],
+      "descricao": "Ralador e desfiador de queijo industrial.",
+      "caracteristicas": [
+        "Capacidade de até 150 kg de queijo por hora",
+        "Base para apoio de caixa coletora",
+        "Estrutura de sustentação",
+        "Fornecido com um disco ralador e um disco desfiador",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12"
+      ]
+    },
+    {
+      "pagina_pdf": 12,
+      "nome": "EDC-1000",
+      "categoria": "Empanadeiras",
+      "modelos": [
+        {
+          "modelo": "EDC-1000"
+        }
+      ],
+      "descricao": "Máquina empanadeira para pão de queijo.",
+      "caracteristicas": [
+        "Produção de até 3000 pães de queijo por hora",
+        "Disco giratório com rotação variável",
+        "Sistema de distribuição de queijo no disco",
+        "Entrada dos pães de queijo por esteira da formadora ou manualmente",
+        "Retirada dos pães de queijo manualmente após o empanamento",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12"
+      ]
+    },
+    {
+      "pagina_pdf": 13,
+      "nome": "Carrinho para Bandejas",
+      "categoria": "Acessórios e Carrinhos",
+      "modelos": [
+        {
+          "modelo": "40 bandejas 40 x 60 cm"
+        },
+        {
+          "modelo": "80 bandejas 20 x 60 cm"
+        }
+      ],
+      "descricao": "Carrinho industrial para armazenamento e transporte de bandejas.",
+      "caracteristicas": [
+        "Estrutura de 20 gavetas",
+        "Capacidade para 40 bandejas de 40 x 60 cm ou 80 bandejas de 20 x 60 cm",
+        "Dimensões externas aproximadas: C=0,70 x A=1,70 x L=0,82 m",
+        "Estrutura em aço inox 304",
+        "Fornecido sem bandejas"
+      ]
+    },
+    {
+      "pagina_pdf": 14,
+      "nome": "Lynea Supra",
+      "categoria": "Linhas de Produção",
+      "modelos": [],
+      "descricao": "Linha para produção de pastéis, empanadas, massa folhada, esfihas, pierogi, croissants, outros salgados e discos de pizza.",
+      "caracteristicas": [
+        "Dosagem automática para recheios",
+        "Painel de comando touch screen",
+        "Cilindro calibrador com suporte para rolos de massa",
+        "Cortadores e massas opcionais em diferentes medidas",
+        "Dobrador de massa opcional",
+        "Fechador e cortador no formato do produto",
+        "Possibilidade de trabalhar com várias linhas de produção",
+        "Ampla gama e possibilidade de formatos de produtos",
+        "Acionamento elétrico-pneumático",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança conforme NR-12"
+      ]
+    },
+    {
+      "pagina_pdf": 15,
+      "nome": "Lynea-BB",
+      "categoria": "Linhas de Produção",
+      "modelos": [
+        {
+          "modelo": "Lynea-BB"
+        }
+      ],
+      "descricao": "Linha para produção de pastéis e assados.",
+      "caracteristicas": [
+        "Acionamento elétrico-pneumático",
+        "Produção de até 1200 por hora",
+        "Passo da máquina automático programável",
+        "Dosagem dos recheios e dobra da massa manual",
+        "Ajustes e configurações através de tela touch screen",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12",
+        "Opções de largura da esteira: 30 cm, 40 cm e 60 cm"
+      ]
+    },
+    {
+      "pagina_pdf": 16,
+      "nome": "Multicilindros MC-S / MC-CLP",
+      "categoria": "Cilindros e Laminadores",
+      "modelos": [
+        {
+          "modelo": "MC-200-S",
+          "largura_cm": 20
+        },
+        {
+          "modelo": "MC-300-S",
+          "largura_cm": 30
+        },
+        {
+          "modelo": "MC-400-S",
+          "largura_cm": 40
+        },
+        {
+          "modelo": "MC-600-S",
+          "largura_cm": 60
+        },
+        {
+          "modelo": "MC-200-CLP",
+          "largura_cm": 20
+        },
+        {
+          "modelo": "MC-300-CLP",
+          "largura_cm": 30
+        },
+        {
+          "modelo": "MC-400-CLP",
+          "largura_cm": 40
+        },
+        {
+          "modelo": "MC-600-CLP",
+          "largura_cm": 60
+        }
+      ],
+      "descricao": "Multicilindros industriais para produção conforme a largura da massa.",
+      "caracteristicas": [
+        "Produção conforme largura da massa",
+        "Composta por 7 cilindros conjugados",
+        "Abertura dos cilindros de fácil ajuste",
+        "Construída em aço inox 304 e outros materiais atóxicos",
+        "Esteira de retorno com ajuste de velocidade",
+        "Eixos com mancais de rolamento blindados e vedação por retentores",
+        "Sistema de segurança NR-12",
+        "Opcional: CLP com controle de rotação individual dos cilindros"
+      ]
+    },
+    {
+      "pagina_pdf": 17,
+      "nome": "Série LPZ",
+      "categoria": "Máquinas para Pizza",
+      "modelos": [
+        {
+          "modelo": "MC-200-S",
+          "medida_cm": 20
+        },
+        {
+          "modelo": "MC-300-S",
+          "medida_cm": 30
+        },
+        {
+          "modelo": "MC-400-S",
+          "medida_cm": 40
+        },
+        {
+          "modelo": "MC-600-S",
+          "medida_cm": 60
+        }
+      ],
+      "descricao": "Linha para produção de discos de pizza.",
+      "caracteristicas": [
+        "4 cilindros laminadores e mesa de corte acoplada",
+        "Controle através do CLP",
+        "Memória para armazenar receitas",
+        "Formatos do produto conforme necessidade do cliente",
+        "Estrutura em aço inox 304",
+        "Segurança conforme NR-12"
+      ],
+      "observacao": "Os códigos de medidas exibidos no catálogo parecem reutilizar a nomenclatura MC-S."
+    },
+    {
+      "pagina_pdf": 18,
+      "nome": "Série CPZ",
+      "categoria": "Máquinas para Pizza",
+      "modelos": [
+        {
+          "modelo": "Série CPZ"
+        }
+      ],
+      "descricao": "Linha automática para produção de discos de pizza.",
+      "caracteristicas": [
+        "Compactadora de massa",
+        "4 cilindros laminadores e mesa de corte acoplada",
+        "Troca rápida de formatos",
+        "Controle através do CLP",
+        "Memória para armazenar programação",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12",
+        "Opcionais: divisor, espalhador de molho e embandejamento automático"
+      ]
+    },
+    {
+      "pagina_pdf": 19,
+      "nome": "LB-700-C",
+      "categoria": "Linhas de Produção",
+      "modelos": [
+        {
+          "modelo": "LB-700-C"
+        }
+      ],
+      "descricao": "Linha para produção de bisnaguinhas.",
+      "caracteristicas": [
+        "Esteira de entrada de massa",
+        "Conjunto de cilindros laminadores",
+        "Sistema de corte longitudinal e transversal",
+        "Embandejamento automático",
+        "Produção de 5.000 a 20.000 peças por hora",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12"
+      ]
+    },
+    {
+      "pagina_pdf": 20,
+      "nome": "Boleadora para Massas",
+      "categoria": "Boleadoras",
+      "modelos": [],
+      "descricao": "Boleadora industrial para controle preciso do peso da massa.",
+      "caracteristicas": [
+        "Controle preciso do peso da massa: 28 a 130 g, tolerância de ±2 g",
+        "Capacidade da moega de 35 kg de massa",
+        "Aplicável a massas macias e meio duras, com teor de água de 50 a 65%",
+        "Estrutura em aço inox 304 e materiais de qualidade alimentar",
+        "Sistema isento de óleo",
+        "Limpeza e manutenção simples, sem necessidade de ferramentas profissionais",
+        "Sistema de segurança NR-12"
+      ]
+    },
+    {
+      "pagina_pdf": 21,
+      "nome": "Amassadeira AMX-CE",
+      "categoria": "Amassadeiras",
+      "modelos": [
+        {
+          "modelo": "AMX-160-CE-S",
+          "cuba": "Extraível",
+          "painel": "Simples",
+          "farinha_kg": 100,
+          "massa_kg": 160,
+          "cv": 16,
+          "dimensoes_m": "1,80 x 1,40 x 1,00"
+        },
+        {
+          "modelo": "AMX-200-CE-S",
+          "cuba": "Extraível",
+          "painel": "Simples",
+          "farinha_kg": 125,
+          "massa_kg": 200,
+          "cv": 22,
+          "dimensoes_m": "1,90 x 1,60 x 1,10"
+        },
+        {
+          "modelo": "AMX-240-CE-S",
+          "cuba": "Extraível",
+          "painel": "Simples",
+          "farinha_kg": 150,
+          "massa_kg": 240,
+          "cv": 22,
+          "dimensoes_m": "1,90 x 1,65 x 1,20"
+        }
+      ],
+      "descricao": "Amassadeira industrial com cuba extraível.",
+      "caracteristicas": [
+        "Cuba extraível",
+        "Capacidade para 160 a 240 kg de massa",
+        "Batedor e eixo central em aço inox 304",
+        "Programação de tempos de batida e velocidades",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12",
+        "Opcional: painel elétrico CLP"
+      ],
+      "observacao": "Capacidades baseadas em 60% de hidratação da massa."
+    },
+    {
+      "pagina_pdf": 22,
+      "nome": "RPA-L / RPA-AE - Recheadora",
+      "categoria": "Recheadoras",
+      "modelos": [
+        {
+          "modelo": "RPA-1000-AE"
+        },
+        {
+          "modelo": "RPA-2000-AE"
+        },
+        {
+          "modelo": "RPA-3000-AE"
+        },
+        {
+          "modelo": "RPA-1000-L"
+        },
+        {
+          "modelo": "RPA-2000-L"
+        },
+        {
+          "modelo": "RPA-3000-L"
+        }
+      ],
+      "descricao": "Máquina automática para cortar e rechear pão de alho, com ou sem sistema antimofo.",
+      "caracteristicas": [
+        "Módulo de corte e recheio para 5 unidades",
+        "Módulo injetor de recheio individual para cada pão",
+        "Não injeta recheio se faltar pão",
+        "Regula a quantidade de recheio injetado",
+        "Introduz pães na embalagem",
+        "Acionamento eletropneumático",
+        "Não acompanha compressor de ar",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12",
+        "Opcional: sistema antimofo"
+      ]
+    },
+    {
+      "pagina_pdf": 23,
+      "nome": "Envasadora para Bags",
+      "categoria": "Dosadoras e Envasadoras",
+      "modelos": [],
+      "descricao": "Envasadora automática para embalagens tipo bag.",
+      "caracteristicas": [
+        "Painel CLP touch screen",
+        "Possui ajuste de dosagem",
+        "Formatação e soldas da embalagem automáticas",
+        "Sistema de dosagem automático",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12"
+      ]
+    },
+    {
+      "pagina_pdf": 24,
+      "nome": "Batedeira Planetária",
+      "categoria": "Batedeiras",
+      "modelos": [],
+      "descricao": "Batedeira planetária industrial para 80 a 100 litros úteis.",
+      "caracteristicas": [
+        "Capacidade de 80 a 100 litros úteis",
+        "Batedor com ajuste de velocidade",
+        "Agitador/mexedor planetário em aço inox 304",
+        "Raspadores em teflon",
+        "Tampa de proteção com sensor magnético",
+        "Acionamento do agitador por motorredutor com lubrificação permanente",
+        "Painel elétrico com acionamento e proteção do motor",
+        "Bomba de transferência acoplada",
+        "Totalmente em aço inox 304",
+        "Sistema de segurança NR-12",
+        "Opcional: aquecimento elétrico na cuba"
+      ]
+    },
+    {
+      "pagina_pdf": 25,
+      "nome": "Amassadeira AMX-CF",
+      "categoria": "Amassadeiras",
+      "modelos": [
+        {
+          "modelo": "AMX-80-CF-Si",
+          "cuba": "Fixa",
+          "painel": "Simples",
+          "farinha_kg": 50,
+          "massa_kg": 80,
+          "cv": 7.5,
+          "dimensoes_m": "1,20 x 1,40 x 0,80"
+        },
+        {
+          "modelo": "AMX-160-CF-Si",
+          "cuba": "Fixa",
+          "painel": "Simples",
+          "farinha_kg": 100,
+          "massa_kg": 160,
+          "cv": 16,
+          "dimensoes_m": "1,80 x 1,40 x 1,00"
+        },
+        {
+          "modelo": "AMX-200-CF-Si",
+          "cuba": "Fixa",
+          "painel": "Simples",
+          "farinha_kg": 125,
+          "massa_kg": 200,
+          "cv": 22,
+          "dimensoes_m": "1,90 x 1,60 x 1,10"
+        },
+        {
+          "modelo": "AMX-240-CF-Si",
+          "cuba": "Fixa",
+          "painel": "Simples",
+          "farinha_kg": 150,
+          "massa_kg": 240,
+          "cv": 22,
+          "dimensoes_m": "1,90 x 1,65 x 1,20"
+        }
+      ],
+      "descricao": "Amassadeira para pães e massas com farinha de trigo.",
+      "caracteristicas": [
+        "Cuba fixa",
+        "Capacidade para 80 a 240 kg de massa",
+        "Batedor e eixo central em aço inox 304",
+        "Batedor com 2 velocidades",
+        "Programação de tempos de batida",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12"
+      ],
+      "observacao": "Capacidades baseadas em 60% de hidratação da massa."
+    },
+    {
+      "pagina_pdf": 26,
+      "nome": "Dosadora com Balança Eletrônica",
+      "categoria": "Dosadoras e Envasadoras",
+      "modelos": [],
+      "descricao": "Dosadora para produtos semilíquidos, pastosos e cremosos.",
+      "caracteristicas": [
+        "Envasa ou dosa produtos semilíquidos, pastosos e cremosos",
+        "Aplicações: massas de bolo, recheios, ketchup, mostarda, molhos, geleias, mel e outros",
+        "Mesa de apoio com altura regulável",
+        "Bicos dosadores com sistema anti-gotejamento",
+        "Dosagem através de balança eletrônica",
+        "Não inclui compressor de ar",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12"
+      ]
+    },
+    {
+      "pagina_pdf": 27,
+      "nome": "AMC-400",
+      "categoria": "Aplicadores de Calda",
+      "modelos": [
+        {
+          "modelo": "AMC-400"
+        }
+      ],
+      "descricao": "Máquina para aspersão de calda em produtos transportados por esteira.",
+      "caracteristicas": [
+        "Velocidade da esteira variável",
+        "Aspersão com vazão variável",
+        "Não utiliza ar comprimido",
+        "Sensor de presença de produto, pulverizando somente durante a passagem",
+        "Caixa inferior para coletar e filtrar o excedente de calda",
+        "Alimentação e retirada dos pães na esteira de forma manual",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança NR-12"
+      ]
+    },
+    {
+      "pagina_pdf": 28,
+      "nome": "AM-400",
+      "categoria": "Aplicadores de Antimofo",
+      "modelos": [
+        {
+          "modelo": "AM-400"
+        }
+      ],
+      "descricao": "Máquina para aplicação de antimofo em produtos transportados por esteira.",
+      "caracteristicas": [
+        "Velocidade da esteira variável",
+        "Aspersão de antimofo com vazão variável",
+        "Não utiliza ar comprimido",
+        "Sensor de presença de produto, pulverizando somente durante a passagem",
+        "Caixa inferior em aço inox 304 para coletar e filtrar excedente de antimofo",
+        "Alimentação e retirada dos pães na esteira de forma manual",
+        "Estrutura em aço inox 304",
+        "Sistema de segurança conforme NR-12"
+      ]
+    }
+  ]
+}

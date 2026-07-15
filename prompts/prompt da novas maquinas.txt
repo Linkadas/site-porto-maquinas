@@ -1,0 +1,121 @@
+Quero atualizar a aba "Produtos" do meu site.
+
+Primeiramente, altere o nome da aba "Produtos" para "Máquinas" em todo o site.
+
+Mantenha todas as máquinas que já estão cadastradas e NÃO crie produtos duplicados.
+
+Caso alguma das máquinas abaixo já exista no site, ignore-a e não a adicione novamente.
+
+Adicione APENAS as máquinas abaixo que ainda não estiverem cadastradas:
+
+• Amassadeira Série APQ-F2
+  - APQ-80-F2
+  - APQ-125-F2
+
+• Amassadeira Série APQ
+  - APQ-180
+  - APQ-300
+
+• Elevador-Virador de Cuba
+
+• FB-600-GF – Formadora de Pão de Queijo para Girofreezer
+
+• FB-60-40 – Formadora de Pão de Queijo
+
+• FB-500-E – Formadora de Pão de Queijo
+
+• FB-500-L – Formadora de Pão de Queijo
+
+• FB-200-A – Formadora de Pão de Queijo
+
+• FB-200-Baby – Formadora de Bancada de Pão de Queijo
+
+• RDO-150 – Ralador e Desfiador de Queijo
+
+• EDC-1000 – Máquina Empanadeira para Pão de Queijo
+
+• Carrinho para Bandejas
+
+• Lynea Supra – Linha para Produção de Pastéis, Empanadas, Massa Folhada, Esfihas, Pierogi, Croissants, Churros Salgados e Discos de Pizza
+
+• Lynea-BB – Linha para Produção de Pastéis e Assados
+
+• Multicilindros
+  - MC-S
+  - MC-CLP
+
+• Série LPZ – Linha para Produção de Discos de Pizza
+
+• Série CPZ – Linha para Produção de Discos de Pizza
+
+• LB-700-C – Linha para Produção de Bisnaguinhas
+
+• Boleadora para Massas
+
+• Amassadeira AMX-CE
+
+• RPA-L / AE – Recheadora com Antimofo e sem Antimofo
+
+• Envasadora para Bags
+
+• Batedeira Planetária
+
+• Amassadeira AMX-CF
+
+• Dosadora com Balança Eletrônica
+
+• AMC-400
+
+• AM-400
+
+Para cada máquina adicionada:
+
+- utilize exatamente a imagem correspondente do PDF;
+- utilize as informações técnicas presentes no catálogo;
+- mantenha o mesmo padrão visual dos cards já existentes;
+- não invente informações;
+- não invente especificações;
+- não coloque preços;
+- mantenha o botão "Adicionar ao orçamento";
+- mantenha o funcionamento do carrinho/orçamento já existente.
+
+Caso uma máquina possua vários modelos, agrupe todos no mesmo card, por exemplo:
+
+Amassadeira Série APQ-F2
+Modelos:
+- APQ-80-F2
+- APQ-125-F2
+
+Não crie um card para cada modelo quando eles pertencem à mesma série.
+
+Organize todas as máquinas por categoria:
+
+- Amassadeiras
+- Formadoras de Pão de Queijo
+- Linhas de Produção
+- Máquinas para Pizza
+- Máquinas para Pastéis e Assados
+- Equipamentos para Queijo
+- Dosadoras
+- Envasadoras
+- Batedeiras
+- Acessórios
+
+Atualize também a pesquisa do site para encontrar essas máquinas por:
+
+- nome;
+- modelo;
+- categoria.
+
+Ao finalizar, informe quais máquinas foram adicionadas e quais já existiam no site e, por isso, não foram cadastradas novamente.
+
+IMPORTANTE:
+
+- Não altere nenhuma funcionalidade existente.
+- Não altere o sistema de orçamento.
+- Não altere o carrinho.
+- Não altere o WhatsApp.
+- Não altere o layout do restante do site.
+- Não remova produtos já cadastrados.
+- Não duplique produtos.
+- Utilize o PDF enviado apenas como fonte das imagens e das informações técnicas das máquinas listadas acima.
