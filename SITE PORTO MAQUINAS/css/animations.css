@@ -81,12 +81,16 @@ body.splash-active {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     cursor: zoom-out;
 }
 
 .lightbox-overlay.show {
     opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .lightbox-overlay img {

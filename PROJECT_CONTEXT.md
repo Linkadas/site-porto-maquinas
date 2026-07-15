@@ -39,11 +39,12 @@ Este arquivo registra o andamento das tarefas, decisões técnicas e pendências
 - **Objetivo:** Corrigir a falha de cliques não-responsivos nos botões e melhorar o posicionamento do botão de carrinho no cabeçalho.
 - **Arquivos Alterados:**
   - [js/main.js](file:///c:/Users/linco/OneDrive/Área de Trabalho/SITE PORTO MAQUINAS/SITE PORTO MAQUINAS/js/main.js) - Resolvida chave não fechada no `if (contactForm)` do código original; refatorado event handler de cliques para usar `.closest()`; adicionado `try...catch` ao localStorage; e alterada a injeção do botão de carrinho para o header principal.
+  - [css/animations.css](file:///c:/Users/linco/OneDrive/Área de Trabalho/SITE PORTO MAQUINAS/SITE PORTO MAQUINAS/css/animations.css) - Corrigidos estilos do `.lightbox-overlay` para não bloquear a tela quando inativo.
 - **Decisões Técnicas:**
   - **Chave do contactForm:** Descobrimos que o bloco `if (contactForm)` original não era fechado após o submit, envelopando todo o código subsequente. Como o formulário não existe em produtos/acessórios, o JavaScript avaliava `contactForm` como `null` e pulava toda a execução do carrinho. Adicionamos a chave de fechamento `}` na linha 76.
   - **Uso do .closest():** Substituímos o event selector direto `.classList.contains` por `.closest('.add-to-cart-btn')` para garantir que o clique nas bordas dos botões ou no emoji `🛒` disparem a adição corretamente.
   - **Reposicionamento no Header:** Injetamos o botão no `.header-main` (ao lado da barra de pesquisa) para evitar que ele fique escondido no menu `<nav>` que possui scroll horizontal em dispositivos móveis, melhorando consideravelmente a usabilidade (UX).
-  - **Cursor de Lupa:** Alteramos o estilo do cursor ao passar sobre as imagens no catálogo (Lightbox) de `zoom-in` para `pointer` (mãozinha), que é o comportamento mais convencional e menos confuso para o usuário.
+  - **Cursor de Lupa e Lightbox Blocker:** O lightbox invisible (`opacity: 0`) cobria a tela inteira no CSS original, bloqueando cliques e forçando o cursor `zoom-out` (lupa com traço de menos). Adicionamos `visibility: hidden` e `pointer-events: none` por padrão no CSS para corrigir isso, liberando a tela e o cursor, e alteramos o cursor de zoom-in para `pointer` nas imagens do catálogo.
 
 
 
