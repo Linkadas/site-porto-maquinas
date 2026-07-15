@@ -1,0 +1,24 @@
+Crie uma funcionalidade de carrinho de compras neste site.
+
+Atualmente, o site possui duas páginas com produtos:
+
+* Página de produtos
+* Página de acessórios de panificação
+
+Adicione em cada produto um botão “Adicionar ao carrinho”.
+
+O carrinho deve:
+
+* Exibir os produtos adicionados
+* Mostrar nome, imagem, preço e quantidade
+* Permitir aumentar ou diminuir a quantidade
+* Permitir remover produtos
+* Calcular automaticamente o subtotal e o valor total
+* Manter os produtos salvos mesmo quando o usuário trocar de página ou atualizar o site, utilizando localStorage
+* Exibir no ícone do carrinho a quantidade total de itens
+* Ter um botão para limpar o carrinho
+* Ter um botão “Finalizar pedido”, inicialmente apenas para teste, sem integração com pagamento
+
+Antes de implementar, analise a estrutura e as tecnologias já utilizadas no projeto. Reutilize os componentes e estilos existentes, mantenha o layout responsivo e evite alterar funcionalidades que já estão funcionando.
+
+Ao terminar, teste o fluxo completo nas duas páginas e atualize o README.md e o arquivo de contexto do projeto, registrando o que foi implementado, os arquivos modificados e possíveis próximos passos.

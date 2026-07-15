@@ -1,0 +1,11 @@
+Ajuste o funcionamento do carrinho do site da seguinte forma:
+
+Quando o cliente clicar em **“Adicionar ao carrinho”**, o produto deve ser apenas adicionado ao carrinho, sem abrir automaticamente a página ou a janela do carrinho. Após adicionar, exiba somente uma mensagem discreta, como **“Produto adicionado ao carrinho”**, e atualize a quantidade de itens no ícone do carrinho.
+
+O cliente poderá abrir o carrinho manualmente quando desejar, clicando no ícone correspondente.
+
+Ao clicar em **“Finalizar compra”**, exiba uma etapa para o cliente escolher com qual contato deseja falar para concluir o pedido. Mostre os contatos disponíveis em botões ou opções selecionáveis, com o nome e o número de cada atendente.
+
+Depois que o cliente selecionar o contato, gere a mensagem com o resumo completo do pedido e abra o WhatsApp diretamente na conversa do número escolhido, deixando a mensagem pronta para ser enviada.
+
+Não altere o visual, os produtos ou outras funcionalidades do site. Faça apenas esses ajustes no carrinho e na finalização da compra.

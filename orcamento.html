@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Solicite um Orçamento - Porto Máquinas</title>
+    <meta name="description" content="Entre em contato com a Porto Máquinas pelo WhatsApp para solicitar um orçamento sob medida para o seu maquinário industrial.">
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="shortcut icon" href="/favicon.svg"/>
+</head>
+<body class="__variable_geist_0og86mn __variable_geist_mono_1d3wf3b antialiased">
+    <header class="topbar">
+        <div class="container header-inner">
+            <div class="header-main">
+                <a href="index.html" class="brand" aria-label="Voltar para o início">
+                    <img src="./assets/porto-maquinas-logo.webp" alt="Porto Máquinas"/>
+                </a>
+                <form class="site-search">
+                    <label for="site-search-input" style="display:none;">Buscar produto</label>
+                    <input id="site-search-input" placeholder="Buscar produto" value=""/>
+                    <button type="submit" aria-label="Buscar produto"><span aria-hidden="true"></span></button>
+                </form>
+            </div>
+            <nav aria-label="Navegação principal">
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="sobre.html" class="nav-btn">Sobre</a>
+                <a href="produtos.html" class="nav-btn">Produtos</a>
+                <a href="linha-acessorio-panificacao.html" class="nav-btn">Linha acessório panificação</a>
+                <a href="servicos.html" class="nav-btn">Serviços</a>
+                <a href="orcamento.html" class="nav-btn is-active">Orçamento</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="contact-section panel-enter">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Orçamento</p>
+                    <h2>Vamos dimensionar seu equipamento</h2>
+                    <p>Conte o que você precisa. O item escolhido no catálogo aparece automaticamente para agilizar o atendimento.</p>
+                </div>
+                <div class="contact-layout">
+                    <aside class="contact-info">
+                        <h3>Canais de atendimento</h3>
+                        <p>Escolha a cidade para abrir diretamente a conversa no WhatsApp.</p>
+                        <ul>
+                            <li><span>São Paulo</span><a href="https://wa.me/5511940395154" target="_blank" rel="noopener noreferrer">WhatsApp&nbsp; (11) 94039-5154</a></li>
+                            <li><span>Campinas</span><a href="https://wa.me/5519981630376" target="_blank" rel="noopener noreferrer">WhatsApp&nbsp; (19) 98163-0376</a></li>
+                            <li><span>Rio de Janeiro</span><a href="https://wa.me/5521964366018" target="_blank" rel="noopener noreferrer">WhatsApp&nbsp; (21) 96436-6018</a></li>
+                        </ul>
+                        <div class="emails">
+                            <a href="mailto:manoel.vieira.comercial@hotmail.com">manoel.vieira.comercial@hotmail.com</a>
+                            <a href="mailto:portomaquinas.comercial@gmail.com">portomaquinas.comercial@gmail.com</a>
+                        </div>
+                    </aside>
+                    <form onsubmit="event.preventDefault(); alert('Em um site estático, o envio via WhatsApp Web seria feito aqui com Javascript, conforme o original!');">
+                        <label>Enviar orçamento para
+                            <select name="destino" required>
+                                <option value="" disabled selected>Escolha o contato do WhatsApp</option>
+                                <option value="5511940395154">São Paulo — (11) 94039-5154</option>
+                                <option value="5519981630376">Campinas — (19) 98163-0376</option>
+                                <option value="5521964366018">Rio de Janeiro — (21) 96436-6018</option>
+                            </select>
+                        </label>
+                        <small class="form-help">A conversa da cidade selecionada abrirá com a mensagem pronta.</small>
+                        <div class="form-row">
+                            <label>Nome <input name="nome" required placeholder="Seu nome"/></label>
+                            <label>E-mail <input name="email" type="email" required placeholder="voce@empresa.com.br"/></label>
+                        </div>
+                        <label>Telefone <input name="telefone" type="tel" placeholder="(11) 99999-9999"/></label>
+                        <label>Equipamento de interesse
+                            <select name="interesse" required>
+                                <option value="" selected>Selecione uma opção</option>
+                                <option value="Forno Túnel">Forno Túnel</option>
+                                <option value="Fornos Rotativos">Fornos Rotativos</option>
+                                <option value="Fornos Lastro">Fornos Lastro</option>
+                                <option value="Amassadeiras">Amassadeiras</option>
+                                <option value="Cilindros">Cilindros</option>
+                                <option value="Modeladoras">Modeladoras</option>
+                                <option value="Divisora Volumétrica">Divisora Volumétrica</option>
+                                <option value="Boleadeira">Boleadeira</option>
+                                <option value="Laminadora">Laminadora</option>
+                                <option value="Batedeiras">Batedeiras</option>
+                                <option value="Fatiadeiras">Fatiadeiras</option>
+                                <option value="Moinho">Moinho</option>
+                            </select>
+                        </label>
+                        <label>Mensagem
+                            <textarea name="mensagem" rows="5" required placeholder="Conte um pouco sobre sua necessidade e volume de produção."></textarea>
+                        </label>
+                        <button type="submit" class="submit-button">Enviar pelo WhatsApp <span>↗</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-brand">
+                <img src="./porto-maquinas-logo.webp" alt="Porto Máquinas"/>
+            </div>
+            <p>© 2026 Porto Máquinas Equipamentos. Conteúdo baseado no catálogo SUPREMAX.</p>
+        </div>
+    </footer>    <script src="./js/main.js"></script>
+</body>
+</html>
