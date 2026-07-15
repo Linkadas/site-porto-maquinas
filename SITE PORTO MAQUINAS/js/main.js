@@ -73,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const url = `https://wa.me/${destino}?text=${encodeURIComponent(texto)}`;
             window.open(url, '_blank');
         });
+    }
     /* 4. Splash Screen Logic */
     const isHomePage = document.querySelector('.hero') !== null;
     
