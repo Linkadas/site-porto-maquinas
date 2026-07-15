@@ -164,19 +164,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 2. Injeção Dinâmica dos Elementos do Carrinho
     function injectCartElements() {
-        // Injetar o botão do carrinho no Header (ao lado do formulário de busca)
+        // Injetar o botão do carrinho no Header (e empilhar a busca abaixo dele)
         const headerMain = document.querySelector('.header-main');
-        if (headerMain && !document.getElementById('cart-toggle-btn')) {
-            const cartToggleHTML = `
-                <div class="cart-toggle-container">
-                    <button id="cart-toggle-btn" class="cart-toggle-btn" aria-label="Ver carrinho">
-                        <span>🛒</span>
-                        <span class="cart-text">Carrinho</span>
-                        <span id="cart-badge" class="cart-badge">0</span>
-                    </button>
-                </div>
-            `;
-            headerMain.insertAdjacentHTML('beforeend', cartToggleHTML);
+        const siteSearch = document.querySelector('.site-search');
+        
+        if (headerMain) {
+            if (siteSearch) {
+                // Criar ou obter o grupo de ações (carrinho + busca)
+                let group = document.querySelector('.header-actions-group');
+                if (!group) {
+                    group = document.createElement('div');
+                    group.className = 'header-actions-group';
+                    headerMain.appendChild(group);
+                    
+                    // Mover a barra de busca para dentro do grupo
+                    group.appendChild(siteSearch);
+                }
+                
+                // Injetar o botão do carrinho se não existir, acima da busca
+                if (!document.getElementById('cart-toggle-btn')) {
+                    const cartToggleHTML = `
+                        <div class="cart-toggle-container">
+                            <button id="cart-toggle-btn" class="cart-toggle-btn" aria-label="Ver carrinho">
+                                <span>🛒</span>
+                                <span class="cart-text">Carrinho</span>
+                                <span id="cart-badge" class="cart-badge">0</span>
+                            </button>
+                        </div>
+                    `;
+                    group.insertAdjacentHTML('afterbegin', cartToggleHTML);
+                }
+            } else {
+                // Fallback caso a página não tenha barra de busca
+                if (!document.getElementById('cart-toggle-btn')) {
+                    const cartToggleHTML = `
+                        <div class="cart-toggle-container">
+                            <button id="cart-toggle-btn" class="cart-toggle-btn" aria-label="Ver carrinho">
+                                <span>🛒</span>
+                                <span class="cart-text">Carrinho</span>
+                                <span id="cart-badge" class="cart-badge">0</span>
+                            </button>
+                        </div>
+                    `;
+                    headerMain.insertAdjacentHTML('beforeend', cartToggleHTML);
+                }
+            }
         }
 
         // Injetar a Gaveta (Drawer) do Carrinho no final do body

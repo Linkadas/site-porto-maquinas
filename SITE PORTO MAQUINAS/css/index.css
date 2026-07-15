@@ -506,3 +506,27 @@ footer{color:#9da0a3;background:#090a0b;border-top:1px solid #2b2d30;padding:24p
     }
 }
 
+/* Grupo de Ações do Cabeçalho (Carrinho e Busca) */
+.header-actions-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    margin-left: auto;
+}
+
+/* Ajuste na busca para não quebrar a largura no grupo */
+.header-actions-group .site-search {
+    width: 280px;
+}
+
+@media (width <= 540px) {
+    .header-actions-group {
+        width: 100%;
+        align-items: center;
+    }
+    .header-actions-group .site-search {
+        width: 100%;
+    }
+}
+
