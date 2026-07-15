@@ -196,10 +196,6 @@ document.addEventListener("DOMContentLoaded", () => {
                             <span>Itens:</span>
                             <span id="cart-count-summary">0 itens</span>
                         </div>
-                        <div class="cart-summary-row total">
-                            <span>Total Estimado:</span>
-                            <span id="cart-total-val">R$ 0,00</span>
-                        </div>
                         <div class="cart-footer-actions">
                             <button id="cart-checkout-btn" class="cart-btn-checkout">
                                 Finalizar Pedido <span>→</span>
@@ -275,7 +271,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="cart-item-details">
                             <div>
                                 <h4 class="cart-item-title">${item.name}</h4>
-                                <div class="cart-item-price">${formatCurrency(item.price)}</div>
                             </div>
                             <div class="cart-item-actions">
                                 <div class="qty-controls">
@@ -299,9 +294,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (countSummary) {
             countSummary.textContent = `${totalItems} ${totalItems === 1 ? 'item' : 'itens'}`;
         }
-        if (totalVal) {
-            totalVal.textContent = formatCurrency(totalPrice);
-        }
+
     }
 
     // 5. Adicionar Item ao Carrinho (com animação)

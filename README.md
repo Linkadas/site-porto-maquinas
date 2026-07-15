@@ -50,11 +50,11 @@ Depois, acesse no seu navegador: **[http://localhost:8080](http://localhost:8080
 
 ## Funcionalidades Adicionadas
 
-### Carrinho de Compras (Orçamento)
-Adicionada uma gaveta lateral interativa de carrinho de compras que facilita a simulação de orçamentos:
+### Carrinho de Compras (Solicitação de Orçamento Sem Exibição de Valores)
+Adicionada uma gaveta lateral interativa de carrinho de compras que facilita a simulação de pedidos de orçamento:
 - **Botões "Adicionar ao carrinho":** Disponíveis em todos os cards nas páginas de **Produtos** e **Acessórios**.
-- **Preços Fictícios:** Inseridos em todos os produtos e acessórios para viabilizar o cálculo do orçamento.
-- **Persistência local:** Armazenamento automático no `localStorage`, mantendo o carrinho intacto mesmo ao mudar de página ou recarregar o navegador.
-- **Controles de quantidade:** Botões para adicionar ou diminuir quantidades diretamente na barra lateral, recalculando subtotais e valor total estimado instantaneamente.
+- **Foco em Vendas Corporativas (Sem Exibição de Valores):** O carrinho não mostra preços nem totais de forma visível ao cliente, operando estritamente como uma lista de intenção de orçamento para que a equipe comercial faça a cotação posterior.
+- **Persistência local:** Armazenamento automático no `localStorage`, mantendo os itens do carrinho intactos mesmo ao mudar de página ou recarregar o navegador.
+- **Controles de quantidade:** Botões para adicionar ou diminuir quantidades diretamente na barra lateral.
 - **Finalização de Pedido:** Simulação de conclusão de orçamento com um modal de feedback moderno e limpeza automática do carrinho.
 

@@ -45,14 +45,30 @@ Este arquivo registra o andamento das tarefas, decisões técnicas e pendências
   - **Uso do .closest():** Substituímos o event selector direto `.classList.contains` por `.closest('.add-to-cart-btn')` para garantir que o clique nas bordas dos botões ou no emoji `🛒` disparem a adição corretamente.
   - **Reposicionamento no Header:** Injetamos o botão no `.header-main` (ao lado da barra de pesquisa) para evitar que ele fique escondido no menu `<nav>` que possui scroll horizontal em dispositivos móveis, melhorando consideravelmente a usabilidade (UX).
   - **Cursor de Lupa e Lightbox Blocker:** O lightbox invisible (`opacity: 0`) cobria a tela inteira no CSS original, bloqueando cliques e forçando o cursor `zoom-out` (lupa com traço de menos). Adicionamos `visibility: hidden` e `pointer-events: none` por padrão no CSS para corrigir isso, liberando a tela e o cursor, e alteramos o cursor de zoom-in para `pointer` nas imagens do catálogo. Também adicionamos esses estilos de proteção diretamente via JS (inline) na criação do elemento do lightbox para anular eventuais caches de CSS persistentes no navegador do usuário.
+### [2026-07-14] Sincronização Local com Repositório Remoto (GitHub)
+- **Objetivo:** Puxar as atualizações e correções enviadas pelo colaborador/amigo no repositório do GitHub.
+- **Arquivos Alterados (via pull):**
+  - [PROJECT_CONTEXT.md](file:///c:/Users/SnyX/Documents/GitHub/site-porto-maquinas/PROJECT_CONTEXT.md)
+  - [README.md](file:///c:/Users/SnyX/Documents/GitHub/site-porto-maquinas/README.md)
+  - [SITE PORTO MAQUINAS/css/animations.css](file:///c:/Users/SnyX/Documents/GitHub/site-porto-maquinas/SITE%20PORTO%20MAQUINAS/css/animations.css)
+  - [SITE PORTO MAQUINAS/css/index.css](file:///c:/Users/SnyX/Documents/GitHub/site-porto-maquinas/SITE%20PORTO%20MAQUINAS/css/index.css)
+  - [SITE PORTO MAQUINAS/js/main.js](file:///c:/Users/SnyX/Documents/GitHub/site-porto-maquinas/SITE%20PORTO%20MAQUINAS/js/main.js)
+  - [SITE PORTO MAQUINAS/linha-acessorio-panificacao.html](file:///c:/Users/SnyX/Documents/GitHub/site-porto-maquinas/SITE%20PORTO%20MAQUINAS/linha-acessorio-panificacao.html)
+  - [SITE PORTO MAQUINAS/produtos.html](file:///c:/Users/SnyX/Documents/GitHub/site-porto-maquinas/SITE%20PORTO%20MAQUINAS/produtos.html)
+  - [SITE PORTO MAQUINAS/prompts/prompt do carrinho.txt](file:///c:/Users/SnyX/Documents/GitHub/site-porto-maquinas/SITE%20PORTO%20MAQUINAS/prompts/prompt%20do%20carrinho.txt)
+- **Decisões Técnicas:**
+  - Identificação do executável do Git em `C:\Program Files\Git\cmd\git.exe` no Windows para execução dos comandos.
+  - Remoção prévia dos arquivos temporários locais `README.md` e `PROJECT_CONTEXT.md` para evitar conflito de merge/untracked files e possibilitar o Pull por Fast-Forward.
 
-
-
+### [2026-07-14] Remoção da Exibição de Valores no Carrinho de Compras
+- **Objetivo:** Ocultar todos os preços e totais estimados no carrinho para que o site funcione estritamente como solicitação de orçamento sem expor valores.
+- **Arquivos Alterados:**
+  - [js/main.js](file:///c:/Users/SnyX/Documents/GitHub/site-porto-maquinas/SITE%20PORTO%20MAQUINAS/js/main.js) - Removida a injeção do contêiner `.cart-summary-row.total`, removida a exibição do elemento `.cart-item-price` no template de itens, e removida a atualização do `totalVal` no método `renderCart()`.
+  - [README.md](file:///c:/Users/SnyX/Documents/GitHub/site-porto-maquinas/README.md) - Atualizada a descrição das funcionalidades do carrinho no documento para refletir o foco em orçamentos sem valores explícitos.
+- **Decisões Técnicas:**
+  - **Manutenção de Atributos internos**: Preservação dos atributos `data-price` e dados estruturais internos para evitar quebras no código ou em futuras integrações comerciais, removendo apenas a exibição visual (UI).
 
 ## Próximos Passos (Pendências)
-1. **Adicionar Colaborador:** O usuário deve adicionar o amigo como colaborador no repositório do GitHub (instruído na mensagem anterior).
-2. **Aceitar Convite:** O amigo do usuário deve aceitar o convite para colaborar.
-3. **Clonar Repositório:** O amigo deve clonar o repositório na máquina dele.
-4. **Criar Branches:** 
-   - Criar uma branch para o usuário principal (ex: `branch-linkadas`).
-   - Criar uma branch para o amigo (ex: `branch-amigo`).
+1. Aguardar novas solicitações do usuário para iniciar as implementações ou melhorias no site.
+2. Garantir o uso de branches organizadas para novas funcionalidades caso necessário.
+
