@@ -336,19 +336,11 @@ nav .nav-btn.is-active {
    4. CONTENT SECTIONS
    ========================================================= */
 .content-section {
-  background-image: linear-gradient(135deg, rgba(17,24,39,0.92) 0%, rgba(31,41,55,0.85) 50%, rgba(163,0,0,0.6) 100%), url(../products/forno-tunel.webp);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; /* Parallax effect for catalogs is nice */
+  background: #f1f5f9; /* Slate 100 - Professional and clean */
   padding: 100px 0;
-  color: var(--white);
 }
 
-.content-section h2, 
-.content-section p.eyebrow, 
-.content-section .section-head p {
-  color: var(--white);
-}
+
 
 .section-head {
   max-width: 800px;
@@ -879,7 +871,10 @@ nav .nav-btn.is-active {
    ========================================================= */
 .contact-section {
   color: var(--white);
-  background: radial-gradient(circle at 90% 10%, rgba(220, 38, 38, 0.15), transparent 40%), var(--ink-2);
+  background-image: linear-gradient(135deg, rgba(17,24,39,0.92) 0%, rgba(31,41,55,0.85) 50%, rgba(163,0,0,0.6) 100%), url(../products/forno-tunel.webp);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 100px 0;
 }
 .contact-section .section-head h2,
