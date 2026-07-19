@@ -239,8 +239,8 @@ nav .nav-btn.is-active {
 .actions .secondary {
   background: var(--white);
   color: var(--ink-2);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-sm);
+  border: none;
+  box-shadow: var(--shadow-md);
 }
 .actions .secondary:hover {
   background: var(--paper);
@@ -336,7 +336,7 @@ nav .nav-btn.is-active {
    4. CONTENT SECTIONS
    ========================================================= */
 .content-section {
-  background: var(--paper);
+  background: #f3f4f6;
   padding: 100px 0;
 }
 
@@ -420,8 +420,8 @@ nav .nav-btn.is-active {
 .product-card, .catalog-choice {
   background: var(--white);
   border-radius: var(--radius-md);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-sm);
+  border: none;
+  box-shadow: var(--shadow-md);
   transition: var(--transition-slow);
   overflow: hidden;
   display: flex;
@@ -696,8 +696,8 @@ nav .nav-btn.is-active {
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: 20px;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-sm);
+  border: none;
+  box-shadow: var(--shadow-md);
   transition: var(--transition);
 }
 .cart-item:hover {
@@ -836,8 +836,8 @@ nav .nav-btn.is-active {
 .service-grid article {
   background: var(--white);
   border-radius: var(--radius-md);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-sm);
+  border: none;
+  box-shadow: var(--shadow-md);
   overflow: hidden;
   display: flex;
   flex-direction: column;

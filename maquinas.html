@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Máquinas Industriais para Panificação - Porto Máquinas</title>
     <meta name="description" content="Equipamentos do catálogo SUPREMAX: Forno Túnel, Fornos Rotativos, Amassadeiras, Cilindros, Batedeiras e muito mais para alta produtividade em panificação.">
-    <link rel="stylesheet" href="./css/index.css?v=3" />
-    <link rel="stylesheet" href="./css/animations.css?v=3" />
-    <link rel="stylesheet" href="./css/maquinas-premium.css?v=2" />
+    <link rel="stylesheet" href="./css/cores/colors.css?v=6">
+    <link rel="stylesheet" href="./css/index.css?v=6" />
+    <link rel="stylesheet" href="./css/animations.css?v=6" />
+    <link rel="stylesheet" href="./css/maquinas-premium.css?v=6" />
     <link rel="shortcut icon" href="/favicon.svg"/>
     <style>
         .category-title {
@@ -32,7 +33,7 @@
                 <a href="index.html" class="nav-btn">Home</a>
 
                 <a href="maquinas.html" class="nav-btn is-active">Máquinas</a>
-                <a href="linha-acessorio-panificacao.html" class="nav-btn">Linha acessório panificação</a>
+                <a href="linha-acessorio-panificacao.html" class="nav-btn">Acessórios</a>
                 <a href="servicos.html" class="nav-btn">Serviços</a>
                 <a href="orcamento.html" class="nav-btn">Orçamento</a>
             </nav>
@@ -64,428 +65,227 @@
                     <div id="premium-catalog-root"></div>
                     
                     <div id="raw-products-source" style="display: none;">
-                    <div class="category-section" data-category="Amassadeiras">
-                        <h3 class="category-title">Amassadeiras</h3>
-                        <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-                    <article class="product-card" data-id="prod-04" data-name="Amassadeiras" data-category="Amassadeiras" data-price="12800.00" data-image="./products/amassadeiras.png">
-                        <div class="product-visual"><span>04</span><img src="./products/amassadeiras.png" alt="Amassadeiras"/><i>SUPREMAX</i></div>
-                        <div class="product-content">
-                            <h3>Amassadeiras</h3>
-                            <p>Misturam e cilindram a massa com homogeneidade, controle digital, duas velocidades e temporizador.</p>
-                            <ul><li>25 a 240 kg</li><li>Linha branca</li><li>Premium</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                    <article class="product-card" data-id="prod-01" data-name="Forno Túnel" data-category="Fornos" data-price="85000.00" data-image="./products/forno-tunel.png">
+                        <div class="product-visual">
+                            <img src="./products/forno-tunel.png" alt="Forno Túnel" loading="lazy">
+                            <i>SUPREMAX</i>
                         </div>
-                    </article>                    <article class="product-card" data-id="prod-13" data-name="Amassadeira Série APQ-F2" data-category="Amassadeiras" data-models="APQ-80-F2, APQ-125-F2" data-price="0.00" data-image="./products/02-amassadeira-serie-apq-f2.png">
-                        <div class="product-visual"><span>13</span><img src="./products/02-amassadeira-serie-apq-f2.png" alt="Amassadeira Série APQ-F2"/><i>CATÃ LOGO</i></div>
                         <div class="product-content">
-                            <h3>Amassadeira Série APQ-F2</h3>
-                            <p><strong>Modelos:</strong> APQ-80-F2, APQ-125-F2</p>
-                            <p>Amassadeira com cuba fixa para massa pronta de pão de queijo.</p>
-                            <ul><li>Cuba fixa</li><li>Capacidade para 80 e 125 kg de massa pronta de pão de queijo</li><li>Batedor especial e pivô central em aço inox 304</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                            <h3>Forno Túnel</h3>
+                            <p>Ideais para produções contínuas de pães, bolos, tortas, salgados, biscoitos e pizzas.</p>
+                            <button class="add-to-cart-btn" data-id="prod-01">
+                                Adicionar ao orçamento
+                            </button>
                         </div>
-                    </article>                    <article class="product-card" data-id="prod-14" data-name="Amassadeira Série APQ" data-category="Amassadeiras" data-models="APQ-180, APQ-300" data-price="0.00" data-image="./products/03-amassadeira-serie-apq.png">
-                        <div class="product-visual"><span>14</span><img src="./products/03-amassadeira-serie-apq.png" alt="Amassadeira Série APQ"/><i>CATÃ LOGO</i></div>
+                    </article>
+                    <article class="product-card" data-id="prod-02" data-name="Forno Rotativo Thor" data-category="Fornos" data-price="42000.00" data-image="./products/forno-rotativo-thor.png">
+                        <div class="product-visual">
+                            <img src="./products/forno-rotativo-thor.png" alt="Forno Rotativo Thor" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
                         <div class="product-content">
-                            <h3>Amassadeira Série APQ</h3>
-                            <p><strong>Modelos:</strong> APQ-180, APQ-300</p>
-                            <p>Amassadeira industrial com cuba removível e controle por CLP.</p>
-                            <ul><li>Cuba removível</li><li>Capacidade para 180 a 300 kg de massa pronta</li><li>Painel elétrico CLP</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                            <h3>Forno Rotativo Thor</h3>
+                            <p>Produzido totalmente em aço inox. Econômico, versátil e de rápido aquecimento.</p>
+                            <button class="add-to-cart-btn" data-id="prod-02">
+                                Adicionar ao orçamento
+                            </button>
                         </div>
-                    </article>                    <article class="product-card" data-id="prod-32" data-name="Amassadeira AMX-CE" data-category="Amassadeiras" data-models="AMX-160-CE-S, AMX-200-CE-S, AMX-240-CE-S" data-price="0.00" data-image="./products/21-amassadeira-amx-ce.png">
-                        <div class="product-visual"><span>32</span><img src="./products/21-amassadeira-amx-ce.png" alt="Amassadeira AMX-CE"/><i>CATÃ LOGO</i></div>
+                    </article>
+                    <article class="product-card" data-id="prod-03" data-name="Forno Rotativo de 1 a 6 Carros" data-category="Fornos" data-price="42000.00" data-image="./products/forno-rotativo-multi.png">
+                        <div class="product-visual">
+                            <img src="./products/forno-rotativo-multi.png" alt="Forno Rotativo de 1 a 6 Carros" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
                         <div class="product-content">
-                            <h3>Amassadeira AMX-CE</h3>
-                            <p><strong>Modelos:</strong> AMX-160-CE-S, AMX-200-CE-S, AMX-240-CE-S</p>
-                            <p>Amassadeira industrial com cuba extraível.</p>
-                            <ul><li>Cuba extraível</li><li>Capacidade para 160 a 240 kg de massa</li><li>Batedor e eixo central em aço inox 304</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                            <h3>Forno Rotativo de 1 a 6 Carros</h3>
+                            <p>Sistema com carros giratórios, ideal para grandes produções.</p>
+                            <button class="add-to-cart-btn" data-id="prod-03">
+                                Adicionar ao orçamento
+                            </button>
                         </div>
-                    </article>                    <article class="product-card" data-id="prod-36" data-name="Amassadeira AMX-CF" data-category="Amassadeiras" data-models="AMX-80-CF-Si, AMX-160-CF-Si, AMX-200-CF-Si, AMX-240-CF-Si" data-price="0.00" data-image="./products/25-amassadeira-amx-cf.png">
-                        <div class="product-visual"><span>36</span><img src="./products/25-amassadeira-amx-cf.png" alt="Amassadeira AMX-CF"/><i>CATÃ LOGO</i></div>
+                    </article>
+                    <article class="product-card" data-id="prod-04" data-name="Forno Lastro Elétrico Multi" data-category="Fornos" data-price="28500.00" data-image="./products/forno-lastro-eletrico.png">
+                        <div class="product-visual">
+                            <img src="./products/forno-lastro-eletrico.png" alt="Forno Lastro Elétrico Multi" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
                         <div class="product-content">
-                            <h3>Amassadeira AMX-CF</h3>
-                            <p><strong>Modelos:</strong> AMX-80-CF-Si, AMX-160-CF-Si, AMX-200-CF-Si, AMX-240-CF-Si</p>
-                            <p>Amassadeira para pães e massas com farinha de trigo.</p>
-                            <ul><li>Cuba fixa</li><li>Capacidade para 80 a 240 kg de massa</li><li>Batedor e eixo central em aço inox 304</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                            <h3>Forno Lastro Elétrico Multi</h3>
+                            <p>Câmaras independentes, com controle de lastro e teto.</p>
+                            <button class="add-to-cart-btn" data-id="prod-04">
+                                Adicionar ao orçamento
+                            </button>
                         </div>
-                    </article>                        </div>
-                    </div>
-
-                    <div class="category-section" data-category="Máquinas para Pastéis e Assados">
-                        <h3 class="category-title">Máquinas para Pastéis e Assados</h3>
-                        <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-                    <article class="product-card" data-id="prod-33" data-name="RPA-L / RPA-AE - Recheadora" data-category="Máquinas para Pastéis e Assados" data-models="RPA-1000-AE, RPA-2000-AE, RPA-3000-AE, RPA-1000-L, RPA-2000-L, RPA-3000-L" data-price="0.00" data-image="./products/22-rpa-l-rpa-ae-recheadora.png">
-                        <div class="product-visual"><span>33</span><img src="./products/22-rpa-l-rpa-ae-recheadora.png" alt="RPA-L / RPA-AE - Recheadora"/><i>CATÃ LOGO</i></div>
+                    </article>
+                    <article class="product-card" data-id="prod-05" data-name="Forno Lastro Ciclotérmico" data-category="Fornos" data-price="28500.00" data-image="./products/forno-lastro-ciclo.png">
+                        <div class="product-visual">
+                            <img src="./products/forno-lastro-ciclo.png" alt="Forno Lastro Ciclotérmico" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
                         <div class="product-content">
-                            <h3>RPA-L / RPA-AE - Recheadora</h3>
-                            <p><strong>Modelos:</strong> RPA-1000-AE, RPA-2000-AE, RPA-3000-AE, RPA-1000-L, RPA-2000-L, RPA-3000-L</p>
-                            <p>Máquina automática para cortar e rechear pão de alho, com ou sem sistema antimofo.</p>
-                            <ul><li>Módulo de corte e recheio para 5 unidades</li><li>Módulo injetor de recheio individual para cada pão</li><li>Não injeta recheio se faltar pão</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                            <h3>Forno Lastro Ciclotérmico</h3>
+                            <p>Excelente padrão de assamento unificado em todas as câmaras.</p>
+                            <button class="add-to-cart-btn" data-id="prod-05">
+                                Adicionar ao orçamento
+                            </button>
                         </div>
-                    </article>                        </div>
-                    </div>
-
-                    <div class="category-section" data-category="Equipamentos para Queijo">
-                        <h3 class="category-title">Equipamentos para Queijo</h3>
-                        <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-                    <article class="product-card" data-id="prod-22" data-name="RDO-150" data-category="Equipamentos para Queijo" data-models="RDO-150" data-price="0.00" data-image="./products/11-rdo-150.png">
-                        <div class="product-visual"><span>22</span><img src="./products/11-rdo-150.png" alt="RDO-150"/><i>CATÃ LOGO</i></div>
+                    </article>
+                    <article class="product-card" data-id="prod-06" data-name="Amassadeira Linha Branca" data-category="Amassadeiras" data-price="12800.00" data-image="./products/amassadeira-branca.png">
+                        <div class="product-visual">
+                            <img src="./products/amassadeira-branca.png" alt="Amassadeira Linha Branca" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
                         <div class="product-content">
-                            <h3>RDO-150</h3>
-                            <p><strong>Modelos:</strong> RDO-150</p>
-                            <p>Ralador e desfiador de queijo industrial.</p>
-                            <ul><li>Capacidade de até 150 kg de queijo por hora</li><li>Base para apoio de caixa coletora</li><li>Estrutura de sustentação</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                            <h3>Amassadeira Linha Branca</h3>
+                            <p>Mistura e cilindra a massa com excelente homogeneidade (25 a 240kg).</p>
+                            <button class="add-to-cart-btn" data-id="prod-06">
+                                Adicionar ao orçamento
+                            </button>
                         </div>
-                    </article>                        </div>
-                    </div>
-
-                    <div class="category-section" data-category="Dosadoras">
-                        <h3 class="category-title">Dosadoras</h3>
-                        <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-                    <article class="product-card" data-id="prod-34" data-name="Envasadora para Bags" data-category="Dosadoras" data-models="" data-price="0.00" data-image="./products/23-envasadora-para-bags.png">
-                        <div class="product-visual"><span>34</span><img src="./products/23-envasadora-para-bags.png" alt="Envasadora para Bags"/><i>CATÃ LOGO</i></div>
+                    </article>
+                    <article class="product-card" data-id="prod-07" data-name="Cilindro Premium" data-category="Cilindros" data-price="9400.00" data-image="./products/cilindro-premium.png">
+                        <div class="product-visual">
+                            <img src="./products/cilindro-premium.png" alt="Cilindro Premium" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
                         <div class="product-content">
-                            <h3>Envasadora para Bags</h3>
-                            
-                            <p>Envasadora automática para embalagens tipo bag.</p>
-                            <ul><li>Painel CLP touch screen</li><li>Possui ajuste de dosagem</li><li>Formatação e soldas da embalagem automáticas</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                            <h3>Cilindro Premium</h3>
+                            <p>Ideal para sovar e homogeneizar a massa. Estrutura em aço inox.</p>
+                            <button class="add-to-cart-btn" data-id="prod-07">
+                                Adicionar ao orçamento
+                            </button>
                         </div>
-                    </article>                    <article class="product-card" data-id="prod-37" data-name="Dosadora com Balança Eletrônica" data-category="Dosadoras" data-models="" data-price="0.00" data-image="./products/26-dosadora-com-balanca-eletronica.png">
-                        <div class="product-visual"><span>37</span><img src="./products/26-dosadora-com-balanca-eletronica.png" alt="Dosadora com Balança Eletrônica"/><i>CATÃ LOGO</i></div>
+                    </article>
+                    <article class="product-card" data-id="prod-08" data-name="Cilindro Linha Branca" data-category="Cilindros" data-price="9400.00" data-image="./products/cilindro-branco.png">
+                        <div class="product-visual">
+                            <img src="./products/cilindro-branco.png" alt="Cilindro Linha Branca" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
                         <div class="product-content">
-                            <h3>Dosadora com Balança Eletrônica</h3>
-                            
-                            <p>Dosadora para produtos semilíquidos, pastosos e cremosos.</p>
-                            <ul><li>Envasa ou dosa produtos semilíquidos, pastosos e cremosos</li><li>Aplicações: massas de bolo, recheios, ketchup, mostarda, molhos, geleias, mel e outros</li><li>Mesa de apoio com altura regulável</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                            <h3>Cilindro Linha Branca</h3>
+                            <p>Ideal para sovar e homogeneizar a massa. Versão em epóxi.</p>
+                            <button class="add-to-cart-btn" data-id="prod-08">
+                                Adicionar ao orçamento
+                            </button>
                         </div>
-                    </article>                        </div>
-                    </div>
-
-                    <div class="category-section" data-category="Batedeiras">
-                        <h3 class="category-title">Batedeiras</h3>
-                        <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-                    <article class="product-card" data-id="prod-10" data-name="Batedeiras" data-category="Batedeiras" data-price="6800.00" data-image="./products/batedeiras.png">
-                        <div class="product-visual"><span>10</span><img src="./products/batedeiras.png" alt="Batedeiras"/><i>SUPREMAX</i></div>
+                    </article>
+                    <article class="product-card" data-id="prod-09" data-name="Modeladora Inox" data-category="Modeladoras" data-price="7200.00" data-image="./products/modeladora-inox.png">
+                        <div class="product-visual">
+                            <img src="./products/modeladora-inox.png" alt="Modeladora Inox" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
                         <div class="product-content">
-                            <h3>Batedeiras</h3>
-                            <p>Para confeitaria, massas leves e líquidas, com controle digital de 10 velocidades.</p>
-                            <ul><li>10 velocidades</li><li>Globo</li><li>Gancho</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                            <h3>Modeladora Inox</h3>
+                            <p>Recomendada para modelar vários tipos e tamanhos de pães (10 a 600g).</p>
+                            <button class="add-to-cart-btn" data-id="prod-09">
+                                Adicionar ao orçamento
+                            </button>
                         </div>
-                    </article>                    <article class="product-card" data-id="prod-35" data-name="Batedeira Planetária" data-category="Batedeiras" data-models="" data-price="0.00" data-image="./products/24-batedeira-planetaria.png">
-                        <div class="product-visual"><span>35</span><img src="./products/24-batedeira-planetaria.png" alt="Batedeira Planetária"/><i>CATÃ LOGO</i></div>
+                    </article>
+                    <article class="product-card" data-id="prod-10" data-name="Divisora Volumétrica" data-category="Equipamentos Gerais" data-price="14500.00" data-image="./products/divisora-volumetrica.png">
+                        <div class="product-visual">
+                            <img src="./products/divisora-volumetrica.png" alt="Divisora Volumétrica" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
                         <div class="product-content">
-                            <h3>Batedeira Planetária</h3>
-                            
-                            <p>Batedeira planetária industrial para 80 a 100 litros úteis.</p>
-                            <ul><li>Capacidade de 80 a 100 litros úteis</li><li>Batedor com ajuste de velocidade</li><li>Agitador/mexedor planetário em aço inox 304</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                            <h3>Divisora Volumétrica</h3>
+                            <p>Divide e corta massa para vários tamanhos de pães através de 3 canais.</p>
+                            <button class="add-to-cart-btn" data-id="prod-10">
+                                Adicionar ao orçamento
+                            </button>
                         </div>
-                    </article>                        </div>
-                    </div>
-
-                    <div class="category-section" data-category="Acessórios">
-                        <h3 class="category-title">Acessórios</h3>
-                        <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-                    <article class="product-card" data-id="prod-38" data-name="AMC-400" data-category="Acessórios" data-models="AMC-400" data-price="0.00" data-image="./products/27-amc-400.png">
-                        <div class="product-visual"><span>38</span><img src="./products/27-amc-400.png" alt="AMC-400"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>AMC-400</h3>
-                            <p><strong>Modelos:</strong> AMC-400</p>
-                            <p>Máquina para aspersão de calda em produtos transportados por esteira.</p>
-                            <ul><li>Velocidade da esteira variável</li><li>Aspersão com vazão variável</li><li>Não utiliza ar comprimido</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                    </article>
+                    <article class="product-card" data-id="prod-11" data-name="Boleadeira" data-category="Equipamentos Gerais" data-price="11200.00" data-image="./products/boleadeira.png">
+                        <div class="product-visual">
+                            <img src="./products/boleadeira.png" alt="Boleadeira" loading="lazy">
+                            <i>SUPREMAX</i>
                         </div>
-                    </article>                    <article class="product-card" data-id="prod-39" data-name="AM-400" data-category="Acessórios" data-models="AM-400" data-price="0.00" data-image="./products/28-am-400.png">
-                        <div class="product-visual"><span>39</span><img src="./products/28-am-400.png" alt="AM-400"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>AM-400</h3>
-                            <p><strong>Modelos:</strong> AM-400</p>
-                            <p>Máquina para aplicação de antimofo em produtos transportados por esteira.</p>
-                            <ul><li>Velocidade da esteira variável</li><li>Aspersão de antimofo com vazão variável</li><li>Não utiliza ar comprimido</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                        </div>
-                    </div>
-
-                    <div class="category-section" data-category="Fornos">
-                        <h3 class="category-title">Fornos</h3>
-                        <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-                    <article class="product-card" data-id="prod-01" data-name="Forno TÃºnel" data-category="Fornos" data-price="85000.00" data-image="./products/forno-tunel.png">
-                        <div class="product-visual"><span>01</span><img src="./products/forno-tunel.png" alt="Forno TÃºnel"/><i>SUPREMAX</i></div>
-                        <div class="product-content">
-                            <h3>Forno TÃºnel</h3>
-                            <p>Ideal para produÃ§Ãµes contínuas, com excelente aproveitamento tÃ©rmico, durabilidade e baixo consumo.</p>
-                            <ul><li>GÃ¡s</li><li>ElÃ©trico</li><li>Lenha</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                    <article class="product-card" data-id="prod-02" data-name="Fornos Rotativos" data-category="Fornos" data-price="42000.00" data-image="./products/fornos-rotativos.png">
-                        <div class="product-visual"><span>02</span><img src="./products/fornos-rotativos.png" alt="Fornos Rotativos"/><i>SUPREMAX</i></div>
-                        <div class="product-content">
-                            <h3>Fornos Rotativos</h3>
-                            <p>Modelos THOR e de 1 a 6 carros, com aquecimento rÃ¡pido e padrÃ£o uniforme de assamento.</p>
-                            <ul><li>Inox</li><li>1 a 6 carros</li><li>EletrogÃ¡s</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                    <article class="product-card" data-id="prod-03" data-name="Fornos Lastro" data-category="Fornos" data-price="28500.00" data-image="./products/fornos-lastro.png">
-                        <div class="product-visual"><span>03</span><img src="./products/fornos-lastro.png" alt="Fornos Lastro"/><i>SUPREMAX</i></div>
-                        <div class="product-content">
-                            <h3>Fornos Lastro</h3>
-                            <p>CÃ¢maras independentes com controle de lastro e teto para assar produtos diferentes simultaneamente.</p>
-                            <ul><li>1 a 4 cÃ¢maras</li><li>CiclotÃ©rmico</li><li>Pellets</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                        </div>
-                    </div>
-
-                    <div class="category-section" data-category="Equipamentos Gerais">
-                        <h3 class="category-title">Equipamentos Gerais</h3>
-                        <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-                    <article class="product-card" data-id="prod-05" data-name="Cilindros" data-category="Equipamentos Gerais" data-price="9400.00" data-image="./products/cilindros.png">
-                        <div class="product-visual"><span>05</span><img src="./products/cilindros.png" alt="Cilindros"/><i>SUPREMAX</i></div>
-                        <div class="product-content">
-                            <h3>Cilindros</h3>
-                            <p>Indicados para sovar e homogeneizar massas, com modelos manuais ou semiautomÃ¡ticos.</p>
-                            <ul><li>Manual</li><li>Semiauto</li><li>Inox</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                    <article class="product-card" data-id="prod-06" data-name="Modeladoras" data-category="Equipamentos Gerais" data-price="7200.00" data-image="./products/modeladoras.png">
-                        <div class="product-visual"><span>06</span><img src="./products/modeladoras.png" alt="Modeladoras"/><i>SUPREMAX</i></div>
-                        <div class="product-content">
-                            <h3>Modeladoras</h3>
-                            <p>Recomendadas para modelar vÃ¡rios tipos e tamanhos de pÃ£es, com estrutura total em aÃ§o inox.</p>
-                            <ul><li>10 a 600 g</li><li>Alongador</li><li>Inox</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                    <article class="product-card" data-id="prod-07" data-name="Divisora VolumÃ©trica" data-category="Equipamentos Gerais" data-price="14500.00" data-image="./products/divisora-volumetrica.png">
-                        <div class="product-visual"><span>07</span><img src="./products/divisora-volumetrica.png" alt="Divisora VolumÃ©trica"/><i>SUPREMAX</i></div>
-                        <div class="product-content">
-                            <h3>Divisora VolumÃ©trica</h3>
-                            <p>Divide e corta massas para vÃ¡rios tamanhos de pÃ£es por meio de trÃªs canais.</p>
-                            <ul><li>Manual</li><li>ElÃ©trica</li><li>3 canais</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                    <article class="product-card" data-id="prod-08" data-name="Boleadeira" data-category="Equipamentos Gerais" data-price="11200.00" data-image="./products/boleadeira.png">
-                        <div class="product-visual"><span>08</span><img src="./products/boleadeira.png" alt="Boleadeira"/><i>SUPREMAX</i></div>
                         <div class="product-content">
                             <h3>Boleadeira</h3>
-                            <p>Permite dividir e bolear massas em partes iguais, com ajuste para porÃ§Ãµes de 25 g atÃ© 90 g.</p>
-                            <ul><li>AtÃ© 30 un.</li><li>25 a 90 g</li><li>PadrÃ£o</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                            <p>Permite dividir e bolear a massa em partes iguais (25g a 90g).</p>
+                            <button class="add-to-cart-btn" data-id="prod-11">
+                                Adicionar ao orçamento
+                            </button>
                         </div>
-                    </article>                    <article class="product-card" data-id="prod-09" data-name="Laminadora" data-category="Equipamentos Gerais" data-price="18900.00" data-image="./products/laminadora.png">
-                        <div class="product-visual"><span>09</span><img src="./products/laminadora.png" alt="Laminadora"/><i>SUPREMAX</i></div>
+                    </article>
+                    <article class="product-card" data-id="prod-12" data-name="Boleadeira Premium" data-category="Equipamentos Gerais" data-price="11200.00" data-image="./products/boleadeira-premium.png">
+                        <div class="product-visual">
+                            <img src="./products/boleadeira-premium.png" alt="Boleadeira Premium" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
                         <div class="product-content">
-                            <h3>Laminadora</h3>
-                            <p>Indicada para laminar massas, massas folhadas e croissants, com largura Ãºtil de 500 mm.</p>
-                            <ul><li>500 mm</li><li>Croissant</li><li>Folhadas</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                            <h3>Boleadeira Premium</h3>
+                            <p>Boleia até 30 unidades simultaneamente, com alta precisão.</p>
+                            <button class="add-to-cart-btn" data-id="prod-12">
+                                Adicionar ao orçamento
+                            </button>
                         </div>
-                    </article>                    <article class="product-card" data-id="prod-11" data-name="Fatiadeiras" data-category="Equipamentos Gerais" data-price="5400.00" data-image="./products/fatiadeiras.png">
-                        <div class="product-visual"><span>11</span><img src="./products/fatiadeiras.png" alt="Fatiadeiras"/><i>SUPREMAX</i></div>
+                    </article>
+                    <article class="product-card" data-id="prod-13" data-name="Laminadora de Massas" data-category="Equipamentos Gerais" data-price="18900.00" data-image="./products/laminadora.png">
+                        <div class="product-visual">
+                            <img src="./products/laminadora.png" alt="Laminadora de Massas" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
                         <div class="product-content">
-                            <h3>Fatiadeiras</h3>
-                            <p>Fatiam pÃ£es de massa macia em espessuras de 12 mm e 14 mm.</p>
-                            <ul><li>12 mm</li><li>14 mm</li><li>PÃ£es</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                            <h3>Laminadora de Massas</h3>
+                            <p>Ideal para laminar massa, massas folhadas e croissant (largura útil 500mm).</p>
+                            <button class="add-to-cart-btn" data-id="prod-13">
+                                Adicionar ao orçamento
+                            </button>
                         </div>
-                    </article>                    <article class="product-card" data-id="prod-12" data-name="Moinho" data-category="Equipamentos Gerais" data-price="3900.00" data-image="./products/moinho.png">
-                        <div class="product-visual"><span>12</span><img src="./products/moinho.png" alt="Moinho"/><i>SUPREMAX</i></div>
+                    </article>
+                    <article class="product-card" data-id="prod-14" data-name="Batedeira Inox" data-category="Batedeiras" data-price="6800.00" data-image="./products/batedeira-inox.png">
+                        <div class="product-visual">
+                            <img src="./products/batedeira-inox.png" alt="Batedeira Inox" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
+                        <div class="product-content">
+                            <h3>Batedeira Inox</h3>
+                            <p>Controle digital com 10 velocidades. Estrutura total em aço inox.</p>
+                            <button class="add-to-cart-btn" data-id="prod-14">
+                                Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </article>
+                    <article class="product-card" data-id="prod-15" data-name="Batedeira Linha Branca" data-category="Batedeiras" data-price="6800.00" data-image="./products/batedeira-branca.png">
+                        <div class="product-visual">
+                            <img src="./products/batedeira-branca.png" alt="Batedeira Linha Branca" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
+                        <div class="product-content">
+                            <h3>Batedeira Linha Branca</h3>
+                            <p>Ideal para produtos de confeitaria, massas leves e líquidas.</p>
+                            <button class="add-to-cart-btn" data-id="prod-15">
+                                Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </article>
+                    <article class="product-card" data-id="prod-16" data-name="Fatiadeira" data-category="Equipamentos Gerais" data-price="5400.00" data-image="./products/fatiadeira.png">
+                        <div class="product-visual">
+                            <img src="./products/fatiadeira.png" alt="Fatiadeira" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
+                        <div class="product-content">
+                            <h3>Fatiadeira</h3>
+                            <p>Fatia pães de massa macia em 2 espessuras diferentes (12mm e 14mm).</p>
+                            <button class="add-to-cart-btn" data-id="prod-16">
+                                Adicionar ao orçamento
+                            </button>
+                        </div>
+                    </article>
+                    <article class="product-card" data-id="prod-17" data-name="Moinho" data-category="Equipamentos Gerais" data-price="3900.00" data-image="./products/moinho.png">
+                        <div class="product-visual">
+                            <img src="./products/moinho.png" alt="Moinho" loading="lazy">
+                            <i>SUPREMAX</i>
+                        </div>
                         <div class="product-content">
                             <h3>Moinho</h3>
-                            <p>Utilizado na produÃ§Ã£o de farinha de rosca, ralando e triturando pÃ£es torrados.</p>
-                            <ul><li>Farinha</li><li>Rosca</li><li>TrituraÃ§Ã£o</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
+                            <p>Utilizado na produção de farinha de rosca. Rala e tritura pães torrados.</p>
+                            <button class="add-to-cart-btn" data-id="prod-17">
+                                Adicionar ao orçamento
+                            </button>
                         </div>
-                    </article>                    <article class="product-card" data-id="prod-27" data-name="Multicilindros MC-S / MC-CLP" data-category="Equipamentos Gerais" data-models="MC-200-S, MC-300-S, MC-400-S, MC-600-S, MC-200-CLP, MC-300-CLP, MC-400-CLP, MC-600-CLP" data-price="0.00" data-image="./products/16-multicilindros-mc-s-mc-clp.png">
-                        <div class="product-visual"><span>27</span><img src="./products/16-multicilindros-mc-s-mc-clp.png" alt="Multicilindros MC-S / MC-CLP"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>Multicilindros MC-S / MC-CLP</h3>
-                            <p><strong>Modelos:</strong> MC-200-S, MC-300-S, MC-400-S, MC-600-S, MC-200-CLP, MC-300-CLP, MC-400-CLP, MC-600-CLP</p>
-                            <p>Multicilindros industriais para produção conforme a largura da massa.</p>
-                            <ul><li>Produção conforme largura da massa</li><li>Composta por 7 cilindros conjugados</li><li>Abertura dos cilindros de fácil ajuste</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                    <article class="product-card" data-id="prod-31" data-name="Boleadora para Massas" data-category="Equipamentos Gerais" data-models="" data-price="0.00" data-image="./products/20-boleadora-para-massas.png">
-                        <div class="product-visual"><span>31</span><img src="./products/20-boleadora-para-massas.png" alt="Boleadora para Massas"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>Boleadora para Massas</h3>
-                            
-                            <p>Boleadora industrial para controle preciso do peso da massa.</p>
-                            <ul><li>Controle preciso do peso da massa: 28 a 130 g, tolerância de ±2 g</li><li>Capacidade da moega de 35 kg de massa</li><li>Aplicável a massas macias e meio duras, com teor de água de 50 a 65%</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                        </div>
-                    </div>
-
-                    <div class="category-section" data-category="Acessórios e Movimentação">
-                        <h3 class="category-title">Acessórios e Movimentação</h3>
-                        <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-                    <article class="product-card" data-id="prod-15" data-name="Elevador-Virador de Cuba" data-category="Acessórios e Movimentação" data-models="" data-price="0.00" data-image="./products/04-elevador-virador-de-cuba.png">
-                        <div class="product-visual"><span>15</span><img src="./products/04-elevador-virador-de-cuba.png" alt="Elevador-Virador de Cuba"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>Elevador-Virador de Cuba</h3>
-                            
-                            <p>Equipamento para elevação, virada e alimentação automática de massa.</p>
-                            <ul><li>Composto por elevador e plataforma com moega</li><li>Alimentação automática da massa na formadora</li><li>Possui raspador de massa</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                        </div>
-                    </div>
-
-                    <div class="category-section" data-category="Formadoras de Pão de Queijo">
-                        <h3 class="category-title">Formadoras de Pão de Queijo</h3>
-                        <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-                    <article class="product-card" data-id="prod-16" data-name="FB-600-GF" data-category="Formadoras de Pão de Queijo" data-models="FB-600-GF" data-price="0.00" data-image="./products/05-fb-600-gf.png">
-                        <div class="product-visual"><span>16</span><img src="./products/05-fb-600-gf.png" alt="FB-600-GF"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>FB-600-GF</h3>
-                            <p><strong>Modelos:</strong> FB-600-GF</p>
-                            <p>Formadora de pão de queijo para Girofreezer.</p>
-                            <ul><li>Painel CLP</li><li>Troca rápida de gabarito</li><li>Regulagem de altura do cabeçote motorizada</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                    <article class="product-card" data-id="prod-17" data-name="FB-60-40" data-category="Formadoras de Pão de Queijo" data-models="FB-60-40" data-price="0.00" data-image="./products/06-fb-60-40.png">
-                        <div class="product-visual"><span>17</span><img src="./products/06-fb-60-40.png" alt="FB-60-40"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>FB-60-40</h3>
-                            <p><strong>Modelos:</strong> FB-60-40</p>
-                            <p>Formadora de pão de queijo com bandejas de 60 x 40 cm.</p>
-                            <ul><li>Fornecida com 3 moldes</li><li>Bandejas plásticas de 60 x 40 cm</li><li>Avanço automático das bandejas</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                    <article class="product-card" data-id="prod-18" data-name="FB-500-E" data-category="Formadoras de Pão de Queijo" data-models="FB-500-E" data-price="0.00" data-image="./products/07-fb-500-e.png">
-                        <div class="product-visual"><span>18</span><img src="./products/07-fb-500-e.png" alt="FB-500-E"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>FB-500-E</h3>
-                            <p><strong>Modelos:</strong> FB-500-E</p>
-                            <p>Formadora de pão de queijo com esteira para transporte de bandejas.</p>
-                            <ul><li>Bandejas de 40 x 60 cm</li><li>Fornecida com 3 moldes</li><li>Alimentação das bandejas manual</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                    <article class="product-card" data-id="prod-19" data-name="FB-500-L" data-category="Formadoras de Pão de Queijo" data-models="FB-500-L" data-price="0.00" data-image="./products/08-fb-500-l.png">
-                        <div class="product-visual"><span>19</span><img src="./products/08-fb-500-l.png" alt="FB-500-L"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>FB-500-L</h3>
-                            <p><strong>Modelos:</strong> FB-500-L</p>
-                            <p>Formadora de pão de queijo com painel touch screen.</p>
-                            <ul><li>Bandejas de 40 x 60 cm</li><li>Magazine para bandejas plásticas</li><li>Avanço automático das bandejas</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                    <article class="product-card" data-id="prod-20" data-name="FB-200-A" data-category="Formadoras de Pão de Queijo" data-models="FB-200-A" data-price="0.00" data-image="./products/09-fb-200-a.png">
-                        <div class="product-visual"><span>20</span><img src="./products/09-fb-200-a.png" alt="FB-200-A"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>FB-200-A</h3>
-                            <p><strong>Modelos:</strong> FB-200-A</p>
-                            <p>Formadora de pão de queijo para bandejas de 20 x 60 cm.</p>
-                            <ul><li>Bandejas de 20 x 60 cm</li><li>Fornecida com 3 moldes</li><li>Alimentação das bandejas manual</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                    <article class="product-card" data-id="prod-21" data-name="FB-200-Baby" data-category="Formadoras de Pão de Queijo" data-models="FB-200-Baby" data-price="0.00" data-image="./products/10-fb-200-baby.png">
-                        <div class="product-visual"><span>21</span><img src="./products/10-fb-200-baby.png" alt="FB-200-Baby"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>FB-200-Baby</h3>
-                            <p><strong>Modelos:</strong> FB-200-Baby</p>
-                            <p>Formadora compacta de bancada para pão de queijo.</p>
-                            <ul><li>Bandejas de 20 x 60 cm</li><li>Mesa com regulagem de altura</li><li>Alimentação das bandejas manual</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                        </div>
-                    </div>
-
-                    <div class="category-section" data-category="Empanadeiras">
-                        <h3 class="category-title">Empanadeiras</h3>
-                        <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-                    <article class="product-card" data-id="prod-23" data-name="EDC-1000" data-category="Empanadeiras" data-models="EDC-1000" data-price="0.00" data-image="./products/12-edc-1000.png">
-                        <div class="product-visual"><span>23</span><img src="./products/12-edc-1000.png" alt="EDC-1000"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>EDC-1000</h3>
-                            <p><strong>Modelos:</strong> EDC-1000</p>
-                            <p>Máquina empanadeira para pão de queijo.</p>
-                            <ul><li>Produção de até 3000 pães de queijo por hora</li><li>Disco giratório com rotação variável</li><li>Sistema de distribuição de queijo no disco</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                        </div>
-                    </div>
-
-                    <div class="category-section" data-category="Acessórios e Carrinhos">
-                        <h3 class="category-title">Acessórios e Carrinhos</h3>
-                        <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-                    <article class="product-card" data-id="prod-24" data-name="Carrinho para Bandejas" data-category="Acessórios e Carrinhos" data-models="40 bandejas 40 x 60 cm, 80 bandejas 20 x 60 cm" data-price="0.00" data-image="./products/13-carrinho-para-bandejas.png">
-                        <div class="product-visual"><span>24</span><img src="./products/13-carrinho-para-bandejas.png" alt="Carrinho para Bandejas"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>Carrinho para Bandejas</h3>
-                            <p><strong>Modelos:</strong> 40 bandejas 40 x 60 cm, 80 bandejas 20 x 60 cm</p>
-                            <p>Carrinho industrial para armazenamento e transporte de bandejas.</p>
-                            <ul><li>Estrutura de 20 gavetas</li><li>Capacidade para 40 bandejas de 40 x 60 cm ou 80 bandejas de 20 x 60 cm</li><li>Dimensões externas aproximadas: C=0,70 x A=1,70 x L=0,82 m</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                        </div>
-                    </div>
-
-                    <div class="category-section" data-category="Linhas de Produção">
-                        <h3 class="category-title">Linhas de Produção</h3>
-                        <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-                    <article class="product-card" data-id="prod-25" data-name="Lynea Supra" data-category="Linhas de Produção" data-models="" data-price="0.00" data-image="./products/14-lynea-supra.png">
-                        <div class="product-visual"><span>25</span><img src="./products/14-lynea-supra.png" alt="Lynea Supra"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>Lynea Supra</h3>
-                            
-                            <p>Linha para produção de pastéis, empanadas, massa folhada, esfihas, pierogi, croissants, outros salgados e discos de pizza.</p>
-                            <ul><li>Dosagem automática para recheios</li><li>Painel de comando touch screen</li><li>Cilindro calibrador com suporte para rolos de massa</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                    <article class="product-card" data-id="prod-26" data-name="Lynea-BB" data-category="Linhas de Produção" data-models="Lynea-BB" data-price="0.00" data-image="./products/15-lynea-bb.png">
-                        <div class="product-visual"><span>26</span><img src="./products/15-lynea-bb.png" alt="Lynea-BB"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>Lynea-BB</h3>
-                            <p><strong>Modelos:</strong> Lynea-BB</p>
-                            <p>Linha para produção de pastéis e assados.</p>
-                            <ul><li>Acionamento elétrico-pneumático</li><li>Produção de até 1200 por hora</li><li>Passo da máquina automático programável</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                    <article class="product-card" data-id="prod-30" data-name="LB-700-C" data-category="Linhas de Produção" data-models="LB-700-C" data-price="0.00" data-image="./products/19-lb-700-c.png">
-                        <div class="product-visual"><span>30</span><img src="./products/19-lb-700-c.png" alt="LB-700-C"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>LB-700-C</h3>
-                            <p><strong>Modelos:</strong> LB-700-C</p>
-                            <p>Linha para produção de bisnaguinhas.</p>
-                            <ul><li>Esteira de entrada de massa</li><li>Conjunto de cilindros laminadores</li><li>Sistema de corte longitudinal e transversal</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                        </div>
-                    </div>
-
-                    <div class="category-section" data-category="Máquinas para Pizza">
-                        <h3 class="category-title">Máquinas para Pizza</h3>
-                        <div class="product-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-                    <article class="product-card" data-id="prod-28" data-name="Série LPZ" data-category="Máquinas para Pizza" data-models="MC-200-S, MC-300-S, MC-400-S, MC-600-S" data-price="0.00" data-image="./products/17-serie-lpz.png">
-                        <div class="product-visual"><span>28</span><img src="./products/17-serie-lpz.png" alt="Série LPZ"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>Série LPZ</h3>
-                            <p><strong>Modelos:</strong> MC-200-S, MC-300-S, MC-400-S, MC-600-S</p>
-                            <p>Linha para produção de discos de pizza.</p>
-                            <ul><li>4 cilindros laminadores e mesa de corte acoplada</li><li>Controle através do CLP</li><li>Memória para armazenar receitas</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                    <article class="product-card" data-id="prod-29" data-name="Série CPZ" data-category="Máquinas para Pizza" data-models="Série CPZ" data-price="0.00" data-image="./products/18-serie-cpz.png">
-                        <div class="product-visual"><span>29</span><img src="./products/18-serie-cpz.png" alt="Série CPZ"/><i>CATÃ LOGO</i></div>
-                        <div class="product-content">
-                            <h3>Série CPZ</h3>
-                            <p><strong>Modelos:</strong> Série CPZ</p>
-                            <p>Linha automática para produção de discos de pizza.</p>
-                            <ul><li>Compactadora de massa</li><li>4 cilindros laminadores e mesa de corte acoplada</li><li>Troca rápida de formatos</li></ul>
-                            <button class="add-to-cart-btn">Adicionar ao orçamento</button>
-                        </div>
-                    </article>                        </div>
-                        </div>
+                    </article>
                     </div>
                     </div> <!-- End of raw-products-source -->
             </div>
@@ -521,7 +321,7 @@
     <footer>
         <div class="container">
             <div class="footer-brand">
-                <img src="./porto-maquinas-logo.webp" alt="Porto Máquinas"/>
+                <img src="./assets/pm-logo-only.webp" alt="Porto Máquinas"/>
             </div>
             <p>© 2026 Porto Máquinas Equipamentos. Conteúdo baseado no catálogo SUPREMAX.</p>
         </div>
