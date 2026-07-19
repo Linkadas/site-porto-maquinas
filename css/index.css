@@ -336,8 +336,15 @@ nav .nav-btn.is-active {
    4. CONTENT SECTIONS
    ========================================================= */
 .content-section {
-  background: #f1f5f9; /* Slate 100 - Professional and clean */
+  background: linear-gradient(135deg, #111827 0%, #1f2937 50%, rgba(163,0,0,0.8) 100%);
   padding: 100px 0;
+  color: var(--white);
+}
+
+.content-section h2, 
+.content-section p.eyebrow, 
+.content-section .section-head p {
+  color: var(--white);
 }
 
 .section-head {
