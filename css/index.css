@@ -336,8 +336,14 @@ nav .nav-btn.is-active {
    4. CONTENT SECTIONS
    ========================================================= */
 .content-section {
-  background: #fecaca;
+  background: #27272a; /* Preto acinzentado (zinc-800) */
   padding: 100px 0;
+  color: var(--white); /* Ensure text is readable on dark background */
+}
+.content-section h2, 
+.content-section p.eyebrow, 
+.content-section .section-head p {
+  color: var(--white);
 }
 
 .section-head {
