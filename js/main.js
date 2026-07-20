@@ -1,4 +1,33 @@
-﻿document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
+    /* 0. Floating WhatsApp Button (Top Priority) */
+    const floatContainer = document.createElement('div');
+    floatContainer.className = 'whatsapp-float-container';
+    floatContainer.innerHTML = `
+        <div class="whatsapp-float-menu" id="whatsapp-float-menu">
+            <div class="whatsapp-menu-header">Escolha a cidade:</div>
+            <a href="https://wa.me/5511940395154?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Porto%20M%C3%A1quinas%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank">São Paulo (11) 94039-5154</a>
+            <a href="https://wa.me/5519981630376?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Porto%20M%C3%A1quinas%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank">Campinas (19) 98163-0376</a>
+            <a href="https://wa.me/5521964366018?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Porto%20M%C3%A1quinas%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank">Rio de Janeiro (21) 96436-6018</a>
+        </div>
+        <button class="whatsapp-float-btn" id="whatsapp-float-btn" aria-label="Falar no WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M12.031 21.054c-1.579 0-3.125-.425-4.49-1.229l-5.04 1.32 1.34-4.912c-.883-1.425-1.35-3.076-1.35-4.78 0-4.935 4.015-8.95 8.95-8.95 4.935 0 8.95 4.015 8.95 8.95s-4.015 8.95-8.95 8.95zm0-16.142c-3.968 0-7.192 3.224-7.192 7.192 0 1.282.336 2.531.973 3.633l.112.193-.787 2.88 2.946-.773.187.111c1.077.64 2.308.977 3.58.977 3.968 0 7.192-3.224 7.192-7.192 0-3.968-3.224-7.192-7.192-7.192z"></path><path d="M15.82 13.676c-.225-.113-1.332-.656-1.538-.73-.205-.075-.355-.113-.505.113-.15.225-.58 .73-.711.881-.131.15-.262.169-.487.056-.225-.113-.951-.35-1.813-1.125-.671-.603-1.125-1.346-1.256-1.571-.131-.225-.014-.347.098-.46.101-.101.225-.262.337-.394.113-.131.15-.225.225-.375.075-.15.038-.281-.019-.394-.056-.113-.505-1.218-.693-1.668-.182-.437-.369-.379-.505-.386-.131-.007-.281-.007-.431-.007-.15 0-.394.056-.6.281-.205.225-.786.769-.786 1.875s.805 2.175.918 2.325c.113.15 1.583 2.419 3.834 3.389.536.231.954.369 1.28.472.537.17 1.025.146 1.411.088.432-.064 1.332-.544 1.519-1.069.187-.525.187-.975.131-1.069-.056-.094-.206-.15-.431-.262z"></path></svg>
+        </button>
+    `;
+    document.body.appendChild(floatContainer);
+
+    const floatMainBtn = document.getElementById('whatsapp-float-btn');
+    if (floatMainBtn) {
+        floatMainBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            floatContainer.classList.toggle('is-open');
+        });
+        document.addEventListener('click', (e) => {
+            if (!floatContainer.contains(e.target)) {
+                floatContainer.classList.remove('is-open');
+            }
+        });
+    }
+
     /* 1. Scroll Animations (Fade In / Slide Up) */
     const observerOptions = {
         root: null,
@@ -181,32 +210,7 @@
         });
     }
 
-    /* 6. Floating WhatsApp Button */
-    const floatContainer = document.createElement('div');
-    floatContainer.className = 'whatsapp-float-container';
-    floatContainer.innerHTML = `\n        <div class="whatsapp-float-menu" id="whatsapp-float-menu">
-            <div class="whatsapp-menu-header">Escolha a cidade:</div>
-            <a href="https://wa.me/5511940395154?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Porto%20M%C3%A1quinas%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank">São Paulo (11) 94039-5154</a>
-            <a href="https://wa.me/5519981630376?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Porto%20M%C3%A1quinas%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank">Campinas (19) 98163-0376</a>
-            <a href="https://wa.me/5521964366018?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Porto%20M%C3%A1quinas%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank">Rio de Janeiro (21) 96436-6018</a>
-        </div>
-        <button class="whatsapp-float-btn" id="whatsapp-float-btn" aria-label="Falar no WhatsApp">
-            <svg viewBox="0 0 24 24"><path d="M12.031 21.054c-1.579 0-3.125-.425-4.49-1.229l-5.04 1.32 1.34-4.912c-.883-1.425-1.35-3.076-1.35-4.78 0-4.935 4.015-8.95 8.95-8.95 4.935 0 8.95 4.015 8.95 8.95s-4.015 8.95-8.95 8.95zm0-16.142c-3.968 0-7.192 3.224-7.192 7.192 0 1.282.336 2.531.973 3.633l.112.193-.787 2.88 2.946-.773.187.111c1.077.64 2.308.977 3.58.977 3.968 0 7.192-3.224 7.192-7.192 0-3.968-3.224-7.192-7.192-7.192z"></path><path d="M15.82 13.676c-.225-.113-1.332-.656-1.538-.73-.205-.075-.355-.113-.505.113-.15.225-.58 .73-.711.881-.131.15-.262.169-.487.056-.225-.113-.951-.35-1.813-1.125-.671-.603-1.125-1.346-1.256-1.571-.131-.225-.014-.347.098-.46.101-.101.225-.262.337-.394.113-.131.15-.225.225-.375.075-.15.038-.281-.019-.394-.056-.113-.505-1.218-.693-1.668-.182-.437-.369-.379-.505-.386-.131-.007-.281-.007-.431-.007-.15 0-.394.056-.6.281-.205.225-.786.769-.786 1.875s.805 2.175.918 2.325c.113.15 1.583 2.419 3.834 3.389.536.231.954.369 1.28.472.537.17 1.025.146 1.411.088.432-.064 1.332-.544 1.519-1.069.187-.525.187-.975.131-1.069-.056-.094-.206-.15-.431-.262z"></path></svg>
-        </button>\n    `;
-    document.body.appendChild(floatContainer);
 
-    const floatMainBtn = document.getElementById('whatsapp-float-btn');
-    if (floatMainBtn) {
-        floatMainBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            floatContainer.classList.toggle('is-open');
-        });
-        document.addEventListener('click', (e) => {
-            if (!floatContainer.contains(e.target)) {
-                floatContainer.classList.remove('is-open');
-            }
-        });
-    }
 
     /* ==========================================
        CARRINHO DE COMPRAS - LÓGICA
