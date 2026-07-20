@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Config
     const ITEMS_PER_PAGE = 12;
-    let currentPage = 1;
-    let currentFilter = 'todas';
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterParam = urlParams.get('filter');
+    let currentFilter = filterParam ? filterParam.toLowerCase() : 'supremax';
     let currentSearchTerm = '';
     
     // Parse products from raw HTML
@@ -70,8 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <input type="text" id="premium-local-search" class="premium-search-input" placeholder="Buscar por nome, modelo ou categoria..." autocomplete="off" />
                 </div>
                 <div class="premium-category-filters" id="premium-filter-buttons">
-                    <button class="premium-filter-btn active" data-filter="todas">Todas</button>
-                    <button class="premium-filter-btn" data-filter="supremax">Supremax</button>
+                    <button class="premium-filter-btn active" data-filter="supremax">Supremax</button>
                     <button class="premium-filter-btn" data-filter="panitech">Panitech</button>
                     <button class="premium-filter-btn" data-filter="mcgfrio">MCGfrio</button>
                 </div>
@@ -122,6 +122,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const gridContainer = document.getElementById('premium-grid-container');
     const loadMoreBtn = document.getElementById('premium-load-more');
     const filterButtons = document.querySelectorAll('.premium-filter-btn');
+    
+    // Set initial active button
+    filterButtons.forEach(btn => {
+        if (btn.getAttribute('data-filter') === currentFilter) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+
     const localSearchInput = document.getElementById('premium-local-search');
     
     // Sync with global header search if it exists
