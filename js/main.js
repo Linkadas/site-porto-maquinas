@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     floatContainer.innerHTML = `
         <div class="whatsapp-float-menu" id="whatsapp-float-menu">
             <div class="whatsapp-menu-header">Escolha a cidade:</div>
-            <a href="https://wa.me/5511940395154?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Porto%20M%C3%A1quinas%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank">São Paulo (11) 94039-5154</a>
+            <a href="https://wa.me/5511925290851?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Porto%20M%C3%A1quinas%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank">São Paulo (11) 92529-0851</a>
             <a href="https://wa.me/5519981630376?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Porto%20M%C3%A1quinas%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank">Campinas (19) 98163-0376</a>
             <a href="https://wa.me/5521964366018?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Porto%20M%C3%A1quinas%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank">Rio de Janeiro (21) 96436-6018</a>
         </div>
@@ -622,9 +622,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     <h3 style="margin-bottom: 10px; font-size: 1.1rem;">Escolha com quem deseja falar:</h3>
                     <p style="margin-bottom: 20px; color: #666; font-size: 0.9rem; line-height: 1.4;">Selecione o atendente mais próximo para enviar seu pedido via WhatsApp.</p>
                     
-                    <button class="contact-select-btn" data-phone="5511940395154" style="width:100%; padding: 15px; margin-bottom:12px; border:1px solid #e0e0e0; border-radius:8px; background:#fff; cursor:pointer; text-align:left; display:flex; flex-direction:column; transition: border-color 0.2s;">
+                    <button class="contact-select-btn" data-phone="5511925290851" style="width:100%; padding: 15px; margin-bottom:12px; border:1px solid #e0e0e0; border-radius:8px; background:#fff; cursor:pointer; text-align:left; display:flex; flex-direction:column; transition: border-color 0.2s;">
                         <strong style="color:#000; font-size: 1rem; margin-bottom: 4px;">São Paulo</strong>
-                        <span style="color:#666; font-size: 0.9rem;">(11) 94039-5154</span>
+                        <span style="color:#666; font-size: 0.9rem;">(11) 92529-0851</span>
                     </button>
                     
                     <button class="contact-select-btn" data-phone="5519981630376" style="width:100%; padding: 15px; margin-bottom:12px; border:1px solid #e0e0e0; border-radius:8px; background:#fff; cursor:pointer; text-align:left; display:flex; flex-direction:column; transition: border-color 0.2s;">
