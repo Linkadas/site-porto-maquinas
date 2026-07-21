@@ -769,6 +769,11 @@ nav .nav-btn.is-active {
 }
 .cart-close-btn:hover { background: #fef2f2; color: var(--red); border-color: #fca5a5; }
 
+.cart-empty-message {
+  color: var(--ink-2);
+  text-align: center;
+}
+
 .cart-drawer-body {
   flex: 1;
   overflow-y: auto;

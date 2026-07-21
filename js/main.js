@@ -645,14 +645,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 btn.addEventListener('click', (e) => {
                     const destino = e.currentTarget.getAttribute('data-phone');
                     
-                    let msg = '*Solicitação de Orçamento — Porto Máquinas*\\n\\n';
-                    msg += 'Olá! Gostaria de solicitar um orçamento para os seguintes equipamentos:\\n\\n';
+                    let msg = '*Solicitação de Orçamento — Porto Máquinas*\n\n';
+                    msg += 'Olá! Gostaria de solicitar um orçamento para os seguintes equipamentos:\n\n';
                     
                     cart.forEach(item => {
-                        msg += '• *' + item.qty + 'x* ' + item.name + '\\n';
+                        msg += '*' + item.qty + 'x* ' + item.name + '\n\n';
                     });
                     
-                    msg += '\\nEnviado através do simulador de carrinho do site Porto Máquinas.';
+                    msg += 'Enviado através do simulador de carrinho do site Porto Máquinas';
                     
                     const url = 'https://wa.me/' + destino + '?text=' + encodeURIComponent(msg);
                     
